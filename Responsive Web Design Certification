@@ -1,2 +1,9 @@
 *** BASIC HTML AND HTML5 ***
 
+Headers go from h1 to h6: <h1> </h1>
+Paragraphs: <p> </p>
+Commenting: <!-- -->
+Main HTML tags: main, header, footer, nav, video, article, section etc.
+Main is the main content of a page: <main> <h1> </h1> <p> </p> </main>
+Adding an image: <img src="url of the image" alt="description of the image">
+The alt attribute improves accessibility and can remain empty is the image is purely decorative.
