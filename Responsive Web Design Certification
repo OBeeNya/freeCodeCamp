@@ -93,3 +93,26 @@ Declare the Doctype of an HTML document:
 Head is used for meta elements at top of page and Body for the actual page content:
 <head> </head>
 <body> </body>
+
+
+*** BASIC CSS ***
+
+You can apply CSS styling with the "style" attribute, with rules within a <style> tag or by writing in an external style sheet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
