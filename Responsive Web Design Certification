@@ -35,4 +35,50 @@ href="#"
 Turning an image into a link:
 <a href"#"><img src="url" alt="descriptive text"></a>
 
-Unordered lists:
+Unordered list:
+<ul>
+  <li> </li>
+  <li> </li>
+</ul>
+
+Ordered list:
+<ol>
+  <li> </li>
+  <li> </li>
+</ol>
+
+Text field:
+<input type="text">
+
+Placeholder displays into input before user has input anything:
+<input type="text" placeholder="placeholder text">
+
+Form:
+<form action="url where you want the data to be sent">
+  <input>
+</form>
+
+Summit button can be an element part of a form:
+<button type="submit">text on button</button>
+
+You can add a required attribute so a field must be filled out before submitting the form:
+<input type="text" required>
+
+Radio is an other type of input, can be nested into its own label element:
+<label for="button name">
+  <input type="radio" name="list name">Button name
+</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
