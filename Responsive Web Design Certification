@@ -1,10 +1,38 @@
 *** BASIC HTML AND HTML5 ***
 
-Headers go from h1 to h6: <h1> </h1>
-Paragraphs: <p> </p>
-Commenting: <!-- -->
-Main HTML tags: main, header, footer, nav, video, article, section etc.
-Main is the main content of a page: <main> <h1> </h1> <p> </p> </main>
-Adding an image: <img src="url of the image" alt="description of the image">
+Headers go from h1 to h6:
+<h1> </h1>
+
+Paragraphs:
+<p> </p>
+
+Commenting:
+<!-- -->
+
+Main HTML tags:
+main, header, footer, nav, video, article, section etc.
+
+Main is the main content of a page:
+<main> <h1> </h1> <p> </p> </main>
+
+Adding an image:
+<img src="url of the image" alt="description of the image">
+
 The alt attribute improves accessibility and can remain empty if the image is purely decorative.
-The a element links to external content: <a href="url">"text appearing as link"</a>
+
+The a anchor element can link to external content:
+<a href="url">"text appearing as link"</a>
+
+but also to an internal element:
+<a href="id">Name>
+
+Target"_blank" specifies to open in a new tab:
+<a target="_blank" href"url">text for link>
+
+Dad link:
+href="#" 
+
+Turning an image into a link:
+<a href"#"><img src="url" alt="descriptive text"></a>
+
+Unordered lists:
