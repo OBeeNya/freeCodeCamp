@@ -65,20 +65,31 @@ You can add a required attribute so a field must be filled out before submitting
 <input type="text" required>
 
 Radio is an other type of input, can be nested into its own label element:
-<label for="button name">
-  <input type="radio" name="list name">Button name
+<label for="button 1">
+  <input id="button 1" type="radio" name="list name"> Button 1
+</label>
+<label for="button 2">
+  <input id="button 2" type="radio" name="list name"> Button 2
 </label>
 
+Checkbox:
+<label for="check 1">
+  <input id="check 1" type="checkbox" name="list name"> Check 1
+</label>
 
+Add the value attribute to determine the value sent by the form to the server:
+<input id="button" value="button" type="radio/checkbox" name="list button"> Button
 
+You can chose to have a radio button/checkbox checked by defaukt:
+<input id="button" value="button" type="radio/checkbox" name="list button" checked> Button
 
+Division element is a general purpose container for other elements:
+<div> </div>
 
+Declare the Doctype of an HTML document:
+<!DOCTYPE html>
+<html> </html>
 
-
-
-
-
-
-
-
-
+Head is used for meta elements at top of page and Body for the actual page content:
+<head> </head>
+<body> </body>
