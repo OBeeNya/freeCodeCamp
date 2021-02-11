@@ -179,7 +179,8 @@ Attribute selectors to style element:
 
 Relative units are relative to an other length value, em or rem.
 
-
+Inheritance:
+  body < class < class declared later < id < inline style < !important
 
 
 
