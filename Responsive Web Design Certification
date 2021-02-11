@@ -124,7 +124,7 @@ Font size:
 
 Font element:
   h1 {
-   font-family: font, default_font;
+   font-family: font, fallback;
   }
 
 Import a font:
@@ -182,12 +182,21 @@ Relative units are relative to an other length value, em or rem.
 Inheritance:
   body < class < class declared later < id < inline style < !important
 
+Hexcode:
+  color: #******;
+  0 to 9 then A to F
+  first 2 * for RED, then GREEN, then BLUE
+  or color: #***;
+  with only 1 * per R G B 
+  
+RGB values:
+  color: rgb(*, *, *);
+  from 0 to 255
 
-
-
-
-
-
+CSS variable:
+  --variable-name: value;
+and to use it:
+  property: var(--variable-name, fallback);
 
 
 
