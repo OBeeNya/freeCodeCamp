@@ -124,10 +124,52 @@ h1 {
 
 Font element:
 h1 {
-  font-family: sans-serif;
+  font-family: font, default_font;
 }
 
 Import a font:
+<link href="url" rel="stylesheet" type="text/css">
+
+Image size:
+<style>
+  .large-img {
+    width: 500px;
+  }
+</style>
+
+Borders:
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 100px/50%;
+  }
+</style>
+
+Background color:
+background-color: red;
+
+Id attributes can be used to style a single element and need to be unique for each element:
+#id_name {
+  background-color: red;
+}
+
+Padding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
