@@ -1,98 +1,98 @@
 *** BASIC HTML AND HTML5 ***
 
 Headers go from h1 to h6:
-<h1> </h1>
+  <h1> </h1>
 
 Paragraphs:
-<p> </p>
+  <p> </p>
 
 Commenting:
-<!-- -->
+  <!-- -->
 
 Main HTML tags:
-main, header, footer, nav, video, article, section etc.
+  main, header, footer, nav, video, article, section etc.
 
 Main is the main content of a page:
-<main> <h1> </h1> <p> </p> </main>
+  <main> <h1> </h1> <p> </p> </main>
 
 Adding an image:
-<img src="url of the image" alt="description of the image">
+  <img src="url of the image" alt="description of the image">
 
 The alt attribute improves accessibility and can remain empty if the image is purely decorative.
 
 The a anchor element can link to external content:
-<a href="url">"text appearing as link"</a>
+  <a href="url">"text appearing as link"</a>
 
 but also to an internal element:
-<a href="id">Name>
+  <a href="id">Name>
 
 Target"_blank" specifies to open in a new tab:
-<a target="_blank" href"url">text for link>
+  <a target="_blank" href"url">text for link>
 
 Dead link:
-href="#" 
+  href="#" 
 
 Turning an image into a link:
-<a href"#"><img src="url" alt="descriptive text"></a>
+  <a href"#"><img src="url" alt="descriptive text"></a>
 
 Unordered list:
-<ul>
-  <li> </li>
-  <li> </li>
-</ul>
+  <ul>
+   <li> </li>
+   <li> </li>
+  </ul>
 
 Ordered list:
-<ol>
-  <li> </li>
-  <li> </li>
-</ol>
+  <ol>
+   <li> </li>
+   <li> </li>
+  </ol>
 
 Text field:
-<input type="text">
+  <input type="text">
 
 Placeholder displays into input before user has input anything:
-<input type="text" placeholder="placeholder text">
+  <input type="text" placeholder="placeholder text">
 
 Form:
-<form action="url where you want the data to be sent">
-  <input>
-</form>
+  <form action="url where you want the data to be sent">
+   <input>
+  </form>
 
 Summit button can be an element part of a form:
-<button type="submit">text on button</button>
+  <button type="submit">text on button</button>
 
 You can add a required attribute so a field must be filled out before submitting the form:
-<input type="text" required>
+  <input type="text" required>
 
 Radio is an other type of input, can be nested into its own label element:
-<label for="button 1">
-  <input id="button 1" type="radio" name="list name"> Button 1
-</label>
-<label for="button 2">
-  <input id="button 2" type="radio" name="list name"> Button 2
-</label>
+  <label for="button 1">
+    <input id="button 1" type="radio" name="list name"> Button 1
+  </label>
+  <label for="button 2">
+    <input id="button 2" type="radio" name="list name"> Button 2
+  </label>
 
 Checkbox:
-<label for="check 1">
-  <input id="check 1" type="checkbox" name="list name"> Check 1
-</label>
+  <label for="check 1">
+   <input id="check 1" type="checkbox" name="list name"> Check 1
+  </label>
 
 Add the value attribute to determine the value sent by the form to the server:
-<input id="button" value="button" type="radio/checkbox" name="list button"> Button
+  <input id="button" value="button" type="radio/checkbox" name="list button"> Button
 
 You can chose to have a radio button/checkbox checked by defaukt:
-<input id="button" value="button" type="radio/checkbox" name="list button" checked> Button
+  <input id="button" value="button" type="radio/checkbox" name="list button" checked> Button
 
 Division element is a general purpose container for other elements:
-<div> </div>
+  <div> </div>
 
 Declare the Doctype of an HTML document:
-<!DOCTYPE html>
-<html> </html>
+  <!DOCTYPE html>
+  <html> </html>
 
 Head is used for meta elements at top of page and Body for the actual page content:
-<head> </head>
-<body> </body>
+  <head> </head>
+  <body> </body>
 
 
 *** BASIC CSS ***
@@ -100,63 +100,77 @@ Head is used for meta elements at top of page and Body for the actual page conte
 You can apply CSS styling with the "style" attribute, with rules within a <style> tag or by writing in an external style sheet.
 
 Style attribute:
-<h2 style="color: red;"> </h2>
+  <h2 style="color: red;"> </h2>
 
 Style block:
-<style>
-  h2 {
-    color: red;
-  }
-</style>
+  <style>
+    h2 {
+      color: red;
+    }
+  </style>
 
 Class declaration:
-<style>
-  .red-text {
-    color: red;
-  }
-</style>
-<h2 class="red-text"> </h2>
+  <style>
+    .red-text {
+     color: red;
+    }
+  </style>
+  <h2 class="red-text"> </h2>
 
 Font size:
-h1 {
-  font-size: 10px;
-}
+  h1 {
+   font-size: 10px;
+  }
 
 Font element:
-h1 {
-  font-family: font, default_font;
-}
+  h1 {
+   font-family: font, default_font;
+  }
 
 Import a font:
-<link href="url" rel="stylesheet" type="text/css">
+  <link href="url" rel="stylesheet" type="text/css">
 
 Image size:
-<style>
-  .large-img {
-    width: 500px;
-  }
-</style>
+  <style>
+   .large-img {
+     width: 500px;
+   }
+  </style>
 
 Borders:
-<style>
-  .thin-red-border {
-    border-color: red;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 100px/50%;
-  }
-</style>
+  <style>
+   .thin-red-border {
+      border-color: red;
+      border-width: 5px;
+      border-style: solid;
+      border-radius: 100px/50%;
+     }
+  </style>
 
 Background color:
-background-color: red;
+  background-color: red;
 
 Id attributes can be used to style a single element and need to be unique for each element:
-#id_name {
-  background-color: red;
-}
+  #id_name {
+    background-color: red;
+    }
 
-Padding
+Padding controls the amount of space between the content of an element and its border.
+  padding-top: **px;
+  padding-right: **px;
+  padding-bottom: **px;
+  padding-left: **px;
+or
+  padding: **px, **px, **px, **px;
 
+
+Margin controls the amount of space between the border of an element and surrounding elements.
+  margin-top: **px;
+  margin-right: **px;
+  margin-bottom: **px;
+  margin-left: **px;
+or
+  margin: **px, **px, **px, **px;
 
 
 
