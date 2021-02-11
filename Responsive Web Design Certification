@@ -207,6 +207,12 @@ Declare a variable in root to make it globally accessible:
 
 *** APPLIED VISUAL DESIGN ***
 
+Text-align property:
+  text-align: justify;
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  
 
 
 
