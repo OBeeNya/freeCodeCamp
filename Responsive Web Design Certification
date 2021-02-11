@@ -99,13 +99,35 @@ Head is used for meta elements at top of page and Body for the actual page conte
 
 You can apply CSS styling with the "style" attribute, with rules within a <style> tag or by writing in an external style sheet.
 
+Style attribute:
+<h2 style="color: red;"> </h2>
 
+Style block:
+<style>
+  h2 {
+    color: red;
+  }
+</style>
 
+Class declaration:
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+<h2 class="red-text"> </h2>
 
+Font size:
+h1 {
+  font-size: 10px;
+}
 
+Font element:
+h1 {
+  font-family: sans-serif;
+}
 
-
-
+Import a font:
 
 
 
