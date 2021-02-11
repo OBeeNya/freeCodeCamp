@@ -172,7 +172,12 @@ Margin controls the amount of space between the border of an element and surroun
 or
   margin: **px, **px, **px, **px;
 
+Attribute selectors to style element:
+  [type='attribute'] {
+    ...
+  }
 
+Relative units are relative to an other length value, em or rem.
 
 
 
