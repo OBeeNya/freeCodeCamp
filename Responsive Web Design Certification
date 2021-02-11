@@ -198,6 +198,30 @@ CSS variable:
 and to use it:
   property: var(--variable-name, fallback);
 
+Declare a variable in root to make it globally accessible:
+  <style>
+    :root {
+      ...
+    }
+  </style>
+
+*** APPLIED VISUAL DESIGN ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
