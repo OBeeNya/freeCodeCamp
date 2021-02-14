@@ -321,14 +321,17 @@ Transform property:
   }
 
 Animation properties:
-  #id {
+  element {                             // works with :hover
     animation-name: *;
     animation-duration: *s;
+    animation-fill-mode: *;            // forwards = animation keeps on going
+    animation-iteration-count: *;     //  number or infinite
+    animation-timing-function: *;     //  popular options: ease, ease-in, ease-out, linear... / cubic-bezier(x1, y1, x2, y2);
   }
   @keyframes animation-name {
     0% {
-      ...
-    }
+      ...                              // top/right/bottom/left: 8px; = creates movement
+    }                                 //  opacity: *; = fading
     100% {
       ...
     }
