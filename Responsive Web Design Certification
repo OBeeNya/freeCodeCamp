@@ -309,10 +309,30 @@ Transform property:
   transform: skewY(*deg);
   works on hover: element:hover { transform: scale(*); }
   
+::before and ::after pseudo elements:
+  element::before {
+    content:"*";
+    background-color:*;
+    border-radius:*%;
+    position:*;
+    height:*;
+    width:*;
+    top/right/bottom/left:*px;
+  }
 
-
-
-
+Animation properties:
+  #id {
+    animation-name: *;
+    animation-duration: *s;
+  }
+  @keyframes animation-name {
+    0% {
+      ...
+    }
+    100% {
+      ...
+    }
+  }
 
 
 
