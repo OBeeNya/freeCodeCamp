@@ -370,6 +370,21 @@ Use of audio element:
     <source src="url" type="*" />         // type can usually be audio/mpeg
   </audio>
   
+Use of figure:
+  <figure>
+    <img...>
+    <figcaption>
+      Briefly notes the trends or conclusion brought by the figure
+    </figcaption>
+  </figure>
+  
+Label element:
+  wraps the text for a specific form control item
+  <form>
+    <label for="id of input">name of label</label>
+    <input type="*" id="*" name="*">
+  </form>
+  
 
 
 
