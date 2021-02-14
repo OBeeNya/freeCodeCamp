@@ -270,6 +270,41 @@ Fixed position:
   other items don't recognize it
   won't move when the user scrolls
   
+Float property:
+  float: left/right;
+  removes from the normal flow
+  
+Position of overlapping elements:
+  z-index:*;
+  higher value moves it higher in the stack
+  
+Margin property:
+  margin: auto; = centers horizontally
+  
+Complementary colors:
+  the sum of 2 perfectly complementary colors should give #FFFFFF
+  the strong visual contrast can be jarring if overused, one of the 2 colors will usually be dominant and the other used to bring visual attention to certain content
+
+Tertiary color:
+  secondary color is created by mixing 2 primary colors
+  tertiary color is created by mixing a secondary color with one of its primary color
+  various harmonious combinations possible, one being the split-complementary color scheme: base color + 2 colors adjacent to its complement
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
