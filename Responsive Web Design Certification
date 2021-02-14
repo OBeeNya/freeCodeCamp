@@ -205,6 +205,7 @@ Declare a variable in root to make it globally accessible:
     }
   </style>
 
+
 *** APPLIED VISUAL DESIGN ***
 
 Text-align property:
@@ -336,6 +337,10 @@ Animation properties:
       ...
     }
   }
+
+
+*** APPLIED ACCESSIBILITY ***
+
 
 
 
