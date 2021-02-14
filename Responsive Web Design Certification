@@ -296,8 +296,19 @@ Hsl property:
   saturation: amount of gray in color, fully saturated has no gray
   lightness: amount of white or black, fully being white
 
+Linear gradient:
+  background: linear-gradient(*deg, color1, color2...);
+  background: repeating-linear-gradient(*deg, color1 *px, color2 *px...);
+  
+Image as background:
+  background: url(url);
 
-
+Transform property:
+  transform: scale(*);
+  transform: skewX(*deg);
+  transform: skewY(*deg);
+  works on hover: element:hover { transform: scale(*); }
+  
 
 
 
