@@ -290,7 +290,11 @@ Tertiary color:
   tertiary color is created by mixing a secondary color with one of its primary color
   various harmonious combinations possible, one being the split-complementary color scheme: base color + 2 colors adjacent to its complement
   
-
+Hsl property:
+  hsl(*, *%, *%)
+  hue: 0 to 360
+  saturation: amount of gray in color, fully saturated has no gray
+  lightness: amount of white or black, fully being white
 
 
 
