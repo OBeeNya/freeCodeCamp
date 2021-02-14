@@ -381,11 +381,20 @@ Use of figure:
 Label element:
   wraps the text for a specific form control item
   <form>
-    <label for="id of input">name of label</label>
+    <label for="*">name of label</label>          // for attribute should be the same as the id attribute of the input
     <input type="*" id="*" name="*">
   </form>
   
-
+Fieldset element:
+  wrap radio buttons to show they are part of a set
+  <form>
+    <fieldset>
+      <input...>
+      <label...>
+      <input>
+      <label>
+     </fieldset>
+   </form>
 
 
 
