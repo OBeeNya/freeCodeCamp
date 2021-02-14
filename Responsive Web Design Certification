@@ -17,8 +17,7 @@ Main is the main content of a page:
 
 Adding an image:
   <img src="url of the image" alt="description of the image">
-
-The alt attribute improves accessibility and can remain empty if the image is purely decorative.
+  The alt attribute improves accessibility and can remain empty if the image is purely decorative.
 
 The a anchor element can link to external content:
   <a href="url">"text appearing as link"</a>
@@ -341,11 +340,36 @@ Animation properties:
 
 *** APPLIED ACCESSIBILITY ***
 
+Use of headings:
+  headers should have semantic meaning
+  headers with equal rank implies new sections, lower ranks implies sub-sections
+  each page should only have one h1 header
 
-
-
-
-
+Use of main:
+  only one per page
+  used to wrap the main content
+  surround the information related to the entral topic of your page
+  
+Use of article:
+  used to wrap independant, self-contained content
+  the section element can be used within it and is used for grouping thematically related content
+  
+Use of header:
+  used to wrap introductory information or navigation links
+  works well for content that is repeated on multiple pages
+  is meant to be used on the body element, is different from the head element which contains the page's title and meta information
+  
+Use of nav:
+  meant to wrap around the main navigation links of your page
+  
+Use of footer:
+  primarily used to contain copyright information or links to related documents
+  
+Use of audio element:
+  <audio id="*" controls>                 // controls attribute adds play, pause and other default controls
+    <source src="url" type="*" />         // type can usually be audio/mpeg
+  </audio>
+  
 
 
 
