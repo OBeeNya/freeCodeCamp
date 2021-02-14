@@ -213,15 +213,63 @@ Text-align property:
   text-align: left;
   text-align: right;
   
+Text properties:
+  font-weight: bold; = <strong> </strong>
+  text-decoration: underline; = <u> </u>
+  font-style: italic; = <em> </em>
+  text-decoration: line-through; = <s> </s>
+  
+Horizontal line:
+  <hr>
 
+Background color property of text:
+  background-color: rgba(*,*,*,*);
+  alpha goes from 0 to 1 for opacity
+  
+Box shadow:
+  box-shadow: offset-x offset-y blur-radius spread-radius color;
+  
+Opacity:
+  opacity: *;
+  from 0 to 1, 1 being opaque
+  
+Text transform:
+  text-transform: lowercase; = transform me
+  text-transform: uppercase; = TRANSFORM ME
+  text-transform: capitalize; = Transform Me
+  text-transform: initial; = default value
+  text-transform: inherit; = value from parent element
+  text-transform: none; = original text
 
+Line height:
+  changes the amount of vertical space between each line
+  line-height: *px;
+  
+Hover state of an anchor tag:
+  :hover pseudo-class selector
+  a:hover{ color:*; }
 
+Relative position:
+  position: relative;
+  top/right/bottom/left: *px/%/em;
+  does not remove from the normal flow
+  no impact on the positions of surrounding items
+  
+Absolute position:
+  position: absolute;
+  top/right/bottom/left: *px/%/em;
+  locks the element in position relative to its parent container
+  remove the element from the normal flow
+  surrounding items ignore it
 
-
-
-
-
-
+Fixed position:
+  position: fixed;
+  top/right/bottom/left: *px/%/em; 
+  locks an element relative to the browser window
+  removes the element from the normal flow
+  other items don't recognize it
+  won't move when the user scrolls
+  
 
 
 
