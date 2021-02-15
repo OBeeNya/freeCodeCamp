@@ -14,3 +14,12 @@ Responsive images:
 Higher resolution display:
   different devices have different pixel density (Pixel Per Inch - PPI or Dots Per Inch DPI)
   simple way to make an image properly appear on a high resolution device is to reduce its size
+
+Responsive typography:
+  instead of using em or px, we can use viewport units and percentages
+  viewports units are relative to the viewport dimensions of a device
+  percentages are relative to the size of the parent container element
+  vw: viewport width
+  vh: viewport height
+  vmin: viewport's smaller dimension
+  vmax: viewport's bigger dimension
