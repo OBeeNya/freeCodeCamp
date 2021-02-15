@@ -32,4 +32,23 @@ Flex-shrink property:
   takes numbers as values, the higher the more it shrinks
   
 Flex-grow property:
+  controls the size of items when the parent container expands
+  takes numbers as values, the higher the more it grows
   
+Flex-basis property:
+  specifies the initial size of items before adjustments with flex-shrink and flex-grow
+  uses regular units like px, em, % etc.
+  auto sizes items based on content
+  
+Flex shorthand property:
+  shortcut available to set several flex properties at once
+  flex: flex-grow flex-shrink flex-basis;
+  
+Order property:
+  tells CSS the order of how flex items appear in the flex container (order on main axis)
+  takes numbers as values, negative values can be used
+  
+Align-self property:
+  allows to adjust each item's alignment individually
+  other common adjustment techniques such as float, clear and vertical-align do not work on flex items
+  takes the same values as align-items and override any value brought by align-items
