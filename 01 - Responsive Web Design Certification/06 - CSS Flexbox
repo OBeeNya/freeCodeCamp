@@ -23,4 +23,13 @@ Align-item property:
   baseline: aligns items to the baseline, line that the letters sit on
   
 Flex-wrap property:
+  extra items move into a new row/column
+  nowrap: default setting
+  wrap / wrap-reverse
+  
+Flex-shrink property:
+  allows an item to shrink if the flex container is too small
+  takes numbers as values, the higher the more it shrinks
+  
+Flex-grow property:
   
