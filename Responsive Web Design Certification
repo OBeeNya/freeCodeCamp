@@ -396,7 +396,32 @@ Fieldset element:
      </fieldset>
    </form>
 
-
+Date form attribute:
+  <input type="date" id="*" name="*">
+  
+Datetime attribute:
+  <time datetime="year-month-day">text of date</time>
+  
+Elements only visible to screen readers:
+  all previous accessibility points only used HTML5
+  CSS can also be used to improve accessibility
+  you can for example position elements off the visual area of the browser window:
+    .SR-only {
+      position: absolute;
+      left: -10000px;
+      width: 1px;                 // if you put 0px, the element will be hidden even for screen readers
+      height: 1px;
+      top: auto;
+      overflow: hidden;
+    }
+  display: none; and visibility: hidden; hide the content for everyone, including screen readers
+  
+High contrast:
+  sufficient contrast improves the readability of the content
+  recommandation: at least 4.5 to 1
+  1:1 = same color
+  21:1 = black on white
+  
 
 
 
