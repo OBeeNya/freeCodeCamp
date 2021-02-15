@@ -1,0 +1,103 @@
+*** APPLIED ACCESSIBILITY ***
+
+Use of headings:
+  headers should have semantic meaning
+  headers with equal rank implies new sections, lower ranks implies sub-sections
+  each page should only have one h1 header
+
+Use of main:
+  only one per page
+  used to wrap the main content
+  surround the information related to the entral topic of your page
+  
+Use of article:
+  used to wrap independant, self-contained content
+  the section element can be used within it and is used for grouping thematically related content
+  
+Use of header:
+  used to wrap introductory information or navigation links
+  works well for content that is repeated on multiple pages
+  is meant to be used on the body element, is different from the head element which contains the page's title and meta information
+  
+Use of nav:
+  meant to wrap around the main navigation links of your page
+  
+Use of footer:
+  primarily used to contain copyright information or links to related documents
+  
+Use of audio element:
+  <audio id="*" controls>                 // controls attribute adds play, pause and other default controls
+    <source src="url" type="*" />         // type can usually be audio/mpeg
+  </audio>
+  
+Use of figure:
+  <figure>
+    <img...>
+    <figcaption>
+      Briefly notes the trends or conclusion brought by the figure
+    </figcaption>
+  </figure>
+  
+Label element:
+  wraps the text for a specific form control item
+  <form>
+    <label for="*">name of label</label>          // for attribute should be the same as the id attribute of the input
+    <input type="*" id="*" name="*">
+  </form>
+  
+Fieldset element:
+  wrap radio buttons to show they are part of a set
+  <form>
+    <fieldset>
+      <input...>
+      <label...>
+      <input>
+      <label>
+     </fieldset>
+   </form>
+
+Date form attribute:
+  <input type="date" id="*" name="*">
+  
+Datetime attribute:
+  <time datetime="year-month-day">text of date</time>
+  
+Elements only visible to screen readers:
+  all previous accessibility points only used HTML5
+  CSS can also be used to improve accessibility
+  you can for example position elements off the visual area of the browser window:
+    .SR-only {
+      position: absolute;
+      left: -10000px;
+      width: 1px;                 // if you put 0px, the element will be hidden even for screen readers
+      height: 1px;
+      top: auto;
+      overflow: hidden;
+    }
+  display: none; and visibility: hidden; hide the content for everyone, including screen readers
+  
+High contrast:
+  sufficient contrast improves the readability of the content
+  recommandation: at least 4.5 to 1
+  1:1 = same color
+  21:1 = black on white
+  
+Colorblindness:
+  most common form is a reduced sensitivity to detect greens
+  
+Using descriptive link text:
+  don't have links showing "click here" or "read more"
+  the link should describe informatiom from the link
+  
+Access keys:
+  the accesskey attribute specifies a shortcut key to activate or bring focus to an element
+  particularly useful when used with interactive elements such as links, buttons and forms
+  example:
+    <button accesskey="b">Button</button>
+    
+Tabindex:
+  the tabindex attributes indicates that an element can be focused on, and its value (0, negative or positive) determines its behavior
+  <main tabindex="0"> </main>
+  tabindex first goes to 1, 2, 3 etc. then to the elements at 0
+  -1 is not reachable by the keyboard, generally used to bring focus to an element programmatically
+  can be used in combination with the pseudo-class :focus to determine how an element looks once focused
