@@ -162,7 +162,6 @@ Padding controls the amount of space between the content of an element and its b
 or
   padding: **px, **px, **px, **px;
 
-
 Margin controls the amount of space between the border of an element and surrounding elements.
   margin-top: **px;
   margin-right: **px;
@@ -422,8 +421,28 @@ High contrast:
   1:1 = same color
   21:1 = black on white
   
+Colorblindness:
+  most common form is a reduced sensitivity to detect greens
+  
+Using descriptive link text:
+  don't have links showing "click here" or "read more"
+  the link should describe informatiom from the link
+  
+Access keys:
+  the accesskey attribute specifies a shortcut key to activate or bring focus to an element
+  particularly useful when used with interactive elements such as links, buttons and forms
+  example:
+    <button accesskey="b">Button</button>
+    
+Tabindex:
+  the tabindex attributes indicates that an element can be focused on, and its value (0, negative or positive) determines its behavior
+  <main tabindex="0"> </main>
+  tabindex first goes to 1, 2, 3 etc. then to the elements at 0
+  -1 is not reachable by the keyboard, generally used to bring focus to an element programmatically
+  can be used in combination with the pseudo-class :focus to determine how an element looks once focused
 
 
+*** RESPONSIVE WEB DESIGN PRINCIPLES ***
 
 
 
