@@ -3,3 +3,6 @@
 Turn any HTML element into a grid container:
   display: grid;
   
+Adding columns:
+  grid-template-columns: *px *px ... ;
+  
