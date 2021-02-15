@@ -17,4 +17,10 @@ Justify-content property:
   space-evenly: distributes space evenly between the flex items with a full space at either end of the flex container
 
 Align-item property:
+  aligns flex items along the cross axis
+  flex-start, flex-end, center
+  stretch: stretch the items to fill the container (default value)
+  baseline: aligns items to the baseline, line that the letters sit on
+  
+Flex-wrap property:
   
