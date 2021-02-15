@@ -1,0 +1,94 @@
+*** BASIC HTML AND HTML5 ***
+
+Headers go from h1 to h6:
+  <h1> </h1>
+
+Paragraphs:
+  <p> </p>
+
+Commenting:
+  <!-- -->
+
+Main HTML tags:
+  main, header, footer, nav, video, article, section etc.
+
+Main is the main content of a page:
+  <main> <h1> </h1> <p> </p> </main>
+
+Adding an image:
+  <img src="url of the image" alt="description of the image">
+  The alt attribute improves accessibility and can remain empty if the image is purely decorative.
+
+The a anchor element can link to external content:
+  <a href="url">"text appearing as link"</a>
+
+but also to an internal element:
+  <a href="id">Name>
+
+Target"_blank" specifies to open in a new tab:
+  <a target="_blank" href"url">text for link>
+
+Dead link:
+  href="#" 
+
+Turning an image into a link:
+  <a href"#"><img src="url" alt="descriptive text"></a>
+
+Unordered list:
+  <ul>
+   <li> </li>
+   <li> </li>
+  </ul>
+
+Ordered list:
+  <ol>
+   <li> </li>
+   <li> </li>
+  </ol>
+
+Text field:
+  <input type="text">
+
+Placeholder displays into input before user has input anything:
+  <input type="text" placeholder="placeholder text">
+
+Form:
+  <form action="url where you want the data to be sent">
+   <input>
+  </form>
+
+Summit button can be an element part of a form:
+  <button type="submit">text on button</button>
+
+You can add a required attribute so a field must be filled out before submitting the form:
+  <input type="text" required>
+
+Radio is an other type of input, can be nested into its own label element:
+  <label for="button 1">
+    <input id="button 1" type="radio" name="list name"> Button 1
+  </label>
+  <label for="button 2">
+    <input id="button 2" type="radio" name="list name"> Button 2
+  </label>
+
+Checkbox:
+  <label for="check 1">
+   <input id="check 1" type="checkbox" name="list name"> Check 1
+  </label>
+
+Add the value attribute to determine the value sent by the form to the server:
+  <input id="button" value="button" type="radio/checkbox" name="list button"> Button
+
+You can chose to have a radio button/checkbox checked by defaukt:
+  <input id="button" value="button" type="radio/checkbox" name="list button" checked> Button
+
+Division element is a general purpose container for other elements:
+  <div> </div>
+
+Declare the Doctype of an HTML document:
+  <!DOCTYPE html>
+  <html> </html>
+
+Head is used for meta elements at top of page and Body for the actual page content:
+  <head> </head>
+  <body> </body>
