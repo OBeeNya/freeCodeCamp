@@ -1,2 +1,16 @@
 *** RESPONSIVE WEB DESIGN PRINCIPLES ***
 
+Media queries:
+  @media ( condition ) {
+    CSS rules;
+  }
+  
+Responsive images:
+  img {
+    max-width: 100%;              // image never wider than the container it is in
+    height: auto;                 // image keeps its original ratio
+  }
+  
+Higher resolution display:
+  different devices have different pixel density (Pixel Per Inch - PPI or Dots Per Inch DPI)
+  simple way to make an image properly appear on a high resolution device is to reduce its size
