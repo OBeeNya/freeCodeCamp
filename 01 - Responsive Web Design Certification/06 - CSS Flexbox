@@ -15,3 +15,6 @@ Justify-content property:
   space-between: align items to the center of the main axis, with extra space placed between the items, first and last items are pushed to the edge of the container
   space-around: align items to the center of the main axis but first and last items are not locked to the edges
   space-evenly: distributes space evenly between the flex items with a full space at either end of the flex container
+
+Align-item property:
+  
