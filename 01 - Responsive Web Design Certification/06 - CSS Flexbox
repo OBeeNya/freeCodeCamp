@@ -1,2 +1,5 @@
 *** CSS FLEXBOX ***
 
+Placing the following CSS property on an element allows to use other flex properties to build a responsive page:
+  display: flex;
+  
