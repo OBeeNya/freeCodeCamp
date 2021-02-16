@@ -45,3 +45,25 @@ Can also be used to create an area if it doesn't have a template to reference:
   
 Reduce repetition:
   grid-template-row/column: repeat(nb of times, *px);           // can add other values after
+
+Limit items size when grid container changes size:
+  grid-template-row/column: minmax( min px, max px);
+  
+Automatically insert as many rows/columns of a desired size depending on the size of the container:
+  repeat ( auto-fill, *px/minmax ) ;
+  
+Collapse empty rows/columns and strech items to fit the container:
+  repeat ( auto-fit, *px/minmax ) ;
+  
+Use of media query to build responsive layouts:
+  @media ( condition ) {
+    element {
+      grid function application ;    
+    }
+  }
+  
+Create grids within grids:
+  element_within_a_grid {
+    display: grid;
+    ...
+  }
