@@ -3,6 +3,45 @@
 Turn any HTML element into a grid container:
   display: grid;
   
-Adding columns:
+Adding columns and rows:
   grid-template-columns: *px *px ... ;
+  grid-template-rows: *px *px;
   
+CSS grid units:
+  fr: fraction of the available space
+  auto: sets to height and width of content
+  %: percent width of its container
+  
+Create gaps:
+  grid-column-gap: *px;
+  grid-row-gap: *px;
+  grid-gap: row-gap column-gap;
+  
+Spacing control:
+  grid-column: beginning line / ending line ;
+  grid-row: beginning line / ending line ;
+
+Align items:
+  horizontally:
+    justify-self: start / center / end ;
+  all items horizontally:
+    justify-items: start / center / end ;
+  vertically:
+    align-self: start / center / end ;
+  all items vertically:
+    align-items: start / center / end ;
+    
+Grouping cells of the grid together:
+  grid-template-areas:
+    "area_for_cell1ofline1 area_for_cell2ofline1 ..."
+    "area_for_cell1ofline2 ..."                                 // . can be used to designate an empty cell
+    
+Place an item in an area:
+  element {
+    grid-area: name_of_area ;
+  }
+Can also be used to create an area if it doesn't have a template to reference:
+  element { grid-area: horizontal line start / vertical line start / horizontal line end / vertical line end ; }
+  
+Reduce repetition:
+  grid-template-row/column: repeat(nb of times, *px);           // can add other values after
