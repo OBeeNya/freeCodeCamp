@@ -1,0 +1,12 @@
+#img-div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	display:grid;
+}
+#image{
+	width: 100%;
+}
+#title{
+	text-transform:uppercase;
+}
