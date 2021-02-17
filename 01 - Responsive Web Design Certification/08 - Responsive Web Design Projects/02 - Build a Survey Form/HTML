@@ -1,1 +1,39 @@
+<h1 id="title">
+	TITLE
+</h1>
 
+<p id="description">
+	short explanation
+</p>
+
+<form id="survey-form">
+	<label for="name" id="name-label">
+		Name: <input id="name" placeholder="name" required type="text">
+	</label>
+	<label for="email" id="email-label">
+		Email: <input id="email" placeholder="email" required type="email">
+	</label>
+	<label for="number" id="number-label">
+		Number: <input id="number" placeholder="number" min="1" max="10" type="number">
+	</label>
+	<select name="dropdown" id="dropdown">
+		<option value="value1">value 1</option>
+		<option value="value2">value 2</option>
+	</select>
+	<label for="radio1">
+		<input id="radio1" type="radio" name="radio_list" value="radio1"> radio 1
+	</label>
+	<label for="radio2">
+		<input id="radio2" type="radio" name="radio_list" value="radio2"> radio 2
+	</label>
+	<label for="checkbox1">
+		<input id="checkbox1" type="checkbox" value="checkbox1" name="checkbox1"> checkbox 1
+	</label>
+		<label for="checkbox2">
+		<input id="checkbox2" type="checkbox" value="checkbox2" name="checkbox2"> checkbox 2
+	</label>
+	<textarea> </textarea>
+	<button id="submit" type="submit">Submit</button>
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
