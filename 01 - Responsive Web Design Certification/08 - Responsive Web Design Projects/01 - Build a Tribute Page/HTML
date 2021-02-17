@@ -1,17 +1,17 @@
 <main id="main">
 	<h1 id="title">
-		valery giscard d'estaing
+		person name
 	</h1>
 	<div id="img-div">
-		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Val%C3%A9ry_Giscard_d%27Estaing_%281975%29.jpg/440px-Val%C3%A9ry_Giscard_d%27Estaing_%281975%29.jpg" alt="giscard d'estaing in 1975">
+		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Diego_Vel%C3%A1zquez_019.jpg/440px-Diego_Vel%C3%A1zquez_019.jpg" alt="picture of the person">
 		<div id="img-caption">
-			Giscard d'Estaing in 1975
+			Picture of the person
 		</div>	
 	</div>
 	<p id="tribute-info">
-		Valéry René Marie Georges Giscard d'Estaing (2 February 1926 – 2 December 2020), also known as Giscard or VGE, was a French politician who served as President of France from 1974 to 1981.
+		This person did this and that.
 	</p>
-	<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Val%C3%A9ry_Giscard_d%27Estaing">Click here for more info</a>
+	<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Anonymity">Click here for more info</a>
 </main>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
