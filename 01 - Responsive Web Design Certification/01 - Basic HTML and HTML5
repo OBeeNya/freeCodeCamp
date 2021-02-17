@@ -23,7 +23,7 @@ The a anchor element can link to external content:
   <a href="url">"text appearing as link"</a>
 
 but also to an internal element:
-  <a href="id">Name>
+  <a href="#id">Name</a>
 
 Target"_blank" specifies to open in a new tab:
   <a target="_blank" href"url">text for link>
