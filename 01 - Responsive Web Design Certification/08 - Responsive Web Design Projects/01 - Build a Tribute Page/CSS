@@ -5,7 +5,7 @@
 	display:grid;
 }
 #image{
-	width: 100%;
+	max-width: 100%;
 }
 #title{
 	text-transform:uppercase;
