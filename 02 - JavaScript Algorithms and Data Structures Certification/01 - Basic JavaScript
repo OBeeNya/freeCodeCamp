@@ -63,3 +63,14 @@ Compound assignments with augmented substraction:
 Compound assignements with augmented multiplication:
   varName *= x;
   
+Compound assignments with augmented division:
+  varName /= x ;
+  
+Declare string variables:
+  var varName = "string" ;
+  
+Escaping literal quotes in strings:
+  type \" instead of just "
+  
+Quoting strings with single quotes:
+  
