@@ -204,3 +204,10 @@ Stand in line:
     array.shift();
     return item;
   }
+
+Understanding boolean values:
+  may only be one of two values: true or false
+  boolean values are never written with quotes
+  
+Use conditional logic with if statements:
+  
