@@ -1,1 +1,18 @@
+<section id="welcome-section">
+	<h1>
+		welcome section
+	</h1>
+</section>
+<nav id="navbar">
+	<a href="#projects">link to projects section</a>
+	<a id="profile-link" target="_blank" href="https://github.com/baubignat">Github of Benjamin Aubignat</a>
+</nav>
+<section id="projects">
+	<a href="#code1">link to code of project 1</a>
+	<code id="code1" class="project-tile">
+		project code
+	</code>
+</section>
 
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
