@@ -1,1 +1,95 @@
+<main id="main-doc">
+	technical documentation
+	<nav id="navbar">
+		<header>
+			topic of the technical documentation
+		</header>
+		<a class="nav-link" href="#topic_of_section_1">topic of section 1</a>
+		<a class="nav-link" href="#topic_of_section_2">topic of section 2</a>
+		<a class="nav-link" href="#topic_of_section_3">topic of section 3</a>
+		<a class="nav-link" href="#topic_of_section_4">topic of section 4</a>
+		<a class="nav-link" href="#topic_of_section_5">topic of section 5</a>
+	</nav>
+	<section id="topic_of_section_1" class="main-section">
+		<header>
+			topic of section 1
+		</header>
+		<p>
+			here's a list:
+			<ul>
+				<li> list 1 </li>
+				<li> list 2 </li>
+				<li> list 3 </li>
+				<li> list 4 </li>
+				<li> list 5 </li>
+			</ul>
+		</p>
+		<p>
+			here is a piece of code:
+			<code>
+				piece of code
+			</code>
+		</p>
+	</section>
+	<section id="topic_of_section_2" class="main-section">
+		<header>
+			topic of section 2
+		</header>
+		<p>
+			paragraph 1 section 2
+		</p>
+		<p>
+			here is a piece of code:
+			<code>
+				piece of code
+			</code>
+		</p>
+	</section>
+	<section id="topic_of_section_3" class="main-section">
+		<header>
+			topic of section 3
+		</header>
+		<p>
+			paragraph 1 section 3
+		</p>
+		<p>
+			here is a piece of code:
+			<code>
+				piece of code
+			</code>
+		</p>
+	</section>
+	<section id="topic_of_section_4" class="main-section">
+		<header>
+			topic of section 4
+		</header>
+		<p>
+			paragraph 1 section 4
+		</p>
+		<p>
+			here is a piece of code:
+			<code>
+				piece of code
+			</code>
+		</p>
+	</section>
+	<section id="topic_of_section_5" class="main-section">
+		<header>
+			topic of section 5
+		</header>
+		<p>
+			paragraph 1 section 5
+		</p>
+		<p>
+			here is a piece of code:
+			<code>
+				piece of code
+			</code>
+		</p>
+	</section>
+</main>
 
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
