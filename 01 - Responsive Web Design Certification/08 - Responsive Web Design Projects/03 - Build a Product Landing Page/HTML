@@ -1,1 +1,19 @@
+<main>
+	<header id="header"> 
+		<img id="header-img" src="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg">
+		<nav id="nav-bar">
+			<a href="#header" class="nav-link">link to header</a>
+			<a href="#header-img" class="nav-link">link to header image</a>
+			<a href="#nav-bar" class="nav-link">link to nav bar</a>
+		</nav>
+	</header>
+	<video id="video" controls>
+		<source src="#"/>
+	</video>
+	<form action="https://www.freecodecamp.com/email-submit" id="form">
+		<input placeholder="email" id="email" name="email" type="email">
+		<input id="submit" type="submit">
+	</form>
+</main>
 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
