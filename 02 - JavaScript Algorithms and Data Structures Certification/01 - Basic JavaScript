@@ -189,4 +189,18 @@ Return a value from a function with return:
   }
   
 Understanding undefined value returned from a function:
+  a function that doesn't have a return statement returns an undefined value
+  it can still have an impact on global variables
   
+Assignment with a returned value:
+  var = function (param1, param2) ;
+  
+Stand in line:
+  a queue is an abstract data structure where items are kept in order
+  new items are added at the back and old items are taken off from the front
+  function nextInLine (array, item) {
+    array.push(item);
+    item=array[0];
+    array.shift();
+    return item;
+  }
