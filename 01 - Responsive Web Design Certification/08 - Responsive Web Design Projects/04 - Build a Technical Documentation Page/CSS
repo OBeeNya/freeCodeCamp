@@ -1,0 +1,9 @@
+#navbar{
+	position: fixed;
+}
+
+@media (max-width: 500px) {
+	#main-doc {
+		background-color: red;
+	}
+}
