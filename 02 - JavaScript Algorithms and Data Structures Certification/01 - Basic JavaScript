@@ -73,4 +73,42 @@ Escaping literal quotes in strings:
   type \" instead of just "
   
 Quoting strings with single quotes:
+  string values may be written with single or double quotes
+  you might want to use one type of quote over the other if you want to use both in an string
+  
+Escape sequences in strings:
+  \' single quote
+  \" double quote
+  \\ backlash
+  \n newline
+  \r carriage return
+  \t tab
+  \b word boundary
+  \f form feed
+  
+Concatenating strings with plus operator:
+  "string 1 " + "string 2" = "string 1 string 2"
+  
+Concatenating strings with the plus equals operator:
+  var varName = "string1" ;
+  varName += "string2" ;
+  
+Constructing strings with variables:
+  var varName1 = "string1" + varName2 + "string2" ;
+  
+Appending variables to strings:
+  var varName1 = "string1" ;
+  var varName2 = "string2" ;
+  varName2 += varName1 ;
+  
+Find the length of a string:
+  varName = "string".length ;
+  
+Use bracket notation to find the first character in a string:
+  var firstLetter = varWord[0] ;
+  
+Understand string immutability:
+  it's not possible to change one letter from a string as such varWord[0]="x" ;
+
+Use bracket notation to find the Nth character in a string:
   
