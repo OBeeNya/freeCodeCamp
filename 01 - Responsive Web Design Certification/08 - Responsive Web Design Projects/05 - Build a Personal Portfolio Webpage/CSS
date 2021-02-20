@@ -1,0 +1,21 @@
+@media (max-width: 500px) {
+	#nav-bar {
+		background-color: yellow;
+	}
+}
+
+#welcome-section {
+	background-color: blue;
+	color: white;
+	height: 100vh;
+}
+
+#navbar{
+	position: fixed;
+	top: 0;
+	height: 10vh;
+}
+
+#projects {
+	background-color: red;
+}
