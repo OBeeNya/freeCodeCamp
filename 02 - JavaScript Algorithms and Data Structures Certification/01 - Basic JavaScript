@@ -172,5 +172,21 @@ Passing values to functions with arguments:
   }
   
 Global scope and functions:
+  variables which are defined outside of a function black have a global scope
+  variables declared without the var keyword are automatically global => don't do it
   
+Local scope and functions:
+  variables declared within a function are only visible within that function
+  
+Global vs local scope in functions:
+  it is possible to have global and local variables with the same name
+  local variables take precedence over global
+  
+Return a value from a function with return:
+  use a return statement to send a value back out of a function
+  function functionName (param) {
+    return param * operation ;
+  }
+  
+Understanding undefined value returned from a function:
   
