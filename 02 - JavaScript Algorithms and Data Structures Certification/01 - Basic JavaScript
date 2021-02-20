@@ -140,3 +140,37 @@ Access multi-dimensional arrays with indexes:
                 ] ;
   array[3][0][1] is equal to 11
   
+Manipulate arrays with push:
+  var array=[1,2];
+  array.push(3);
+  => array equals to [1,2,3];
+  
+Manipulate arrays with pop:
+  used to "pop" a value off of the end of an array
+  this popped off value is assigned to a variable
+  var popper = array.pop() ;
+  
+Manipulate arrays with shift:
+  removes the first element instead of the last
+  var poper = array.shift();
+  
+Manipulate arrays with unshift:
+  add elements in front of the array
+  array.unshift(value);
+  
+Write reusable javascript with functions:
+  create the function:    
+    function functionName () {
+      ...
+    }
+  call the function:
+    functionName();
+    
+Passing values to functions with arguments:
+  function functionName ( param1, param2 ) {
+    ...
+  }
+  
+Global scope and functions:
+  
+  
