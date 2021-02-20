@@ -1,2 +1,65 @@
 *** BASIC JAVASCRIPT ***
 
+Comment JavaScript code:
+  // commenting on one line
+  /* */ multi-line commenting
+  
+Declaring variables:
+  var nameOfVariable ;
+  
+Storing value with the assignment operator:
+  varName = x ;
+    
+Assigning the value of one variable to another:
+  varName1 = VarName2 ;
+  
+Initializing variables with the assignment operator:
+  var varName = x ;
+  
+Uninitialiazed variables:
+  initial value is undefined
+  mathematical operation on undefined variable results in NaN (Not a Number)
+  
+Case sensitivity in variables:
+  var someVar != var SomeVar
+  best practice: first word in lowercase then uppercase for first letter of following words: someVarName
+  
+Add two numbers with javascript:
+  var varName = x + y;
+  
+Substract one number from another with javascript:
+  var varName = x - y ;
+  
+Multiply two numbers with javascript:
+  var varName = x * y ;
+  
+Divide one number by another with javacsript:
+  var varName = x / y ;
+  
+Increment a number with javascript:
+  varName++;
+  
+Decrement a number with javascript:
+  varName--;
+  
+Create decimal numbers (floats) with javascript:
+  var varName = x.y ;
+  
+Multiply two decimals with javascript:
+  var varName = w.x * y.z ;
+  
+Divide one decimal by another with javascript:
+  var varName = w.x / y.z ;
+  
+Findind a remainder with javascript:
+  var varName = x % y ;
+  
+Compound assignments with augmented addition:
+  varName += x ;
+  
+Compound assignments with augmented substraction:
+  varName -= x;
+  
+Compound assignements with augmented multiplication:
+  varName *= x;
+  
