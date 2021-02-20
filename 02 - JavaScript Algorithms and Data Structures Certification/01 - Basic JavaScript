@@ -111,4 +111,32 @@ Understand string immutability:
   it's not possible to change one letter from a string as such varWord[0]="x" ;
 
 Use bracket notation to find the Nth character in a string:
+  var nthLetterOfWord = word[n-1] ;
+  
+Use bracket notation to find the last character in a string:
+  var lastLetter = word[word.length-1] ;
+  
+Use bracket notation to find the nth-to-last character in a string:
+  var letter = word[word.length-n] ;
+
+Store multiple values in one variable using javascript arrays:
+  var varName = [ value1, value2, value3 ] ;
+  
+Nest one array within another array:
+  [ [value1, value2], [value3, value4] ] ;
+  
+Access array data with indexes:
+  var varName = [value1, value2, value3] ;
+  varName[1] is equal to value2
+  
+Modify array data with indexes:
+  varName[n] = x ;
+  
+Access multi-dimensional arrays with indexes:
+  var array = [ [1,2,3],
+                [4,5,6],
+                [7,8,9],
+                [[10,11,12],13,14]
+                ] ;
+  array[3][0][1] is equal to 11
   
