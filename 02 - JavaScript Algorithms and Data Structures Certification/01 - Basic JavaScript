@@ -208,6 +208,58 @@ Stand in line:
 Understanding boolean values:
   may only be one of two values: true or false
   boolean values are never written with quotes
+  true = 1
+  false = 0
   
 Use conditional logic with if statements:
+  if ( condition is true ) {
+    statements ;
+  }
   
+Comparison with the equality operator:
+  if ( var == x )
+  can compare different data types:
+    3 == '3'      // true
+  
+Comparison with the strict equality operator:
+  does not compare different data types
+  
+Determine the type of a value/variable:
+  typeof var
+  
+Comparison with the inequality operator:
+  3 != 3          // false
+  
+Comparison with the strict inequality operator:
+  !==
+  do not convert data types
+  
+Comparison with the greater than operator:
+  >
+  convert data types
+  
+Comparison with the greater than or equal to operator:
+  >=
+  convert data types
+  
+Comparison with the less than operator:
+  <
+  convert data types
+  
+Comparison with the less than or equal to operator:
+  <=
+  convert data types
+  
+Comparisons with the logical and operator:
+  &&
+  
+Comparisons with the logical or operator:
+  ||
+  
+Introducing else statements:
+   if (condition) {
+    statements ;
+   }
+   else {
+    statements ;
+   }
