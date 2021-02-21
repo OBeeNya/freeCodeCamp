@@ -317,6 +317,6 @@ Returning boolean values from functions:
   
 Build javascript objects:
   var varName {
-    property1 = value 1,
-    property2 = value 2
+    property1: value 1,
+    property2: value 2
   } ;
