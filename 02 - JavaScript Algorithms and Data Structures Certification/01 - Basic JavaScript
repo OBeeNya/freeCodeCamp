@@ -263,3 +263,32 @@ Introducing else statements:
    else {
     statements ;
    }
+
+Introducing else is statements:
+  if (condition) {
+    statements ;
+  }
+  else if (condition) {
+    statements ;
+  }
+  else {
+    statements ;
+  }
+  
+Logical order in if else statements:
+  a function is executed from top to bottom
+  
+Chaining else if statements:
+  if (condition1) {
+    statement1
+  }
+  else if (condition2) {
+    statement2
+  }
+  else if (condition3) {
+    statement3
+  }
+  else {
+    statementN
+  }
+
