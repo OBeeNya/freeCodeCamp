@@ -300,7 +300,23 @@ Selecting from many options with switch statements:
     case 2:
       statements;
       break;
+    default:
+      statements;
+      break;
   }
   switch values are tested with strict equality (===)
   
+Multiple identical options in switch statements:
+  case 1:
+  case 2:
+  case 3:
+    statements
+    
+Returning boolean values from functions:
+  return x<y;         // returns true if x<y
   
+Build javascript objects:
+  var varName {
+    property1 = value 1,
+    property2 = value 2
+  } ;
