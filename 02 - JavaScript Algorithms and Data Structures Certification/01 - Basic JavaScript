@@ -316,7 +316,40 @@ Returning boolean values from functions:
   return x<y;         // returns true if x<y
   
 Build javascript objects:
-  var varName {
+  var varName = {
     property1: value 1,
     property2: value 2
   } ;
+
+Access object property with dot notation:
+  var varName {
+    prop1: val1
+  }
+  val1 = varName.prop1
+  
+Access object property with bracket notation:
+  val1 = varName[prop1]
+  
+Accessing object properties with variables:
+  var object = {
+    prop1: val1, prop2: val2
+  };
+  var var1 = "prop2";
+  var var2 = object[var1];
+  
+Updating object properties:
+  object.property = value ;
+  object[property]=value;
+  
+Add new properties to a javascript object:
+  same way as you would modify an existing one
+  object.newProperty=value;
+  
+Delete properties from a javascript object:
+  delete object.property;
+  
+Testing objects for properties:
+  object.hasOwnProperty(property);      // true or false
+  
+Manipulating complex objects:
+  
