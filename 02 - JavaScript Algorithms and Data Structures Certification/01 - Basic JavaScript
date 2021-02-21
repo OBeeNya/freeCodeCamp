@@ -292,3 +292,15 @@ Chaining else if statements:
     statementN
   }
 
+Selecting from many options with switch statements:
+  switch(var){
+    case 1:
+      statements;
+      break;
+    case 2:
+      statements;
+      break;
+  }
+  switch values are tested with strict equality (===)
+  
+  
