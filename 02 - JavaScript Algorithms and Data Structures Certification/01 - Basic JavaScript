@@ -407,5 +407,18 @@ Replace loops using recursion:
     }
   }
   
-Profile lookup:
+Generate random fractions with javascript:
+  Math.random() generates a random decimal number between 0 and note quite up to 1
+  
+Generate random whole numbers with javascript:
+  Math.floor(Math.random() * max ) ;
+  
+Generate random whole numbers within a range:
+  Math.floor(Math.random() * (max-min+1) + min);
+  
+Use the parseInt function:
+  parses a string and returns an integer
+  var varName = parsesInt ("string") ;        // returns NaN if string can't be converted
+  
+Use the parseInt function with a radix:
   
