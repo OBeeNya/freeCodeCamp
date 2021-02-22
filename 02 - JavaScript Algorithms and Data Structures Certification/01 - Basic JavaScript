@@ -385,4 +385,27 @@ Iterate through an array with a for loop:
   for ( var i=0; i<array.length; i++)
   
 Nesting for loops:
+  for ( var i=0; i<array1.length; i++ ) {
+    for ( var j=0; j<array1[i].length; j++ ) {
+      statement;
+    }
+  }
+
+Iterate with javascript do... while loops:
+  do {
+    statement;
+  }
+  while (condition) ;
+  
+Replace loops using recursion:
+  function functionName (array, n) {
+    if (n<=0){
+      return x;
+    }
+    else {
+      return functionName (array, n-1) /* operation */ array[n-1] ;
+    }
+  }
+  
+Profile lookup:
   
