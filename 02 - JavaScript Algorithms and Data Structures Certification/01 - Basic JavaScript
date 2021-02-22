@@ -421,4 +421,18 @@ Use the parseInt function:
   var varName = parsesInt ("string") ;        // returns NaN if string can't be converted
   
 Use the parseInt function with a radix:
+  radix specifies the base of the number
+  radix 2 = binary
+  radix can be between 2 and 36
+  parseInt(string, radix);
+  
+Use the conditional (ternary) operator:
+  condition ? expression-if-true : expression-if-false ;
+  
+Use multiple conditional (ternary) operators:
+  condition1 ? expression-if-true
+  : condition2 ? expression-if-true
+  : expression-if-false ;
+  
+Use recursion to create a countdown:
   
