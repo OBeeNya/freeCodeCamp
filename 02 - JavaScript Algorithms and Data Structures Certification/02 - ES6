@@ -1,2 +1,29 @@
 *** ES6 ***
 
+Explore differences between the var and let keywords:
+  unlike var, when using let, a variable with the same name can only be declared once
+  let varName = "cat";
+  let varName = "dog";      // returns an error
+  
+Compare scopes of the var and let keywords:
+  a var keyword is declared globally or locally if declared in a function
+  if you declare a variable with the let keyword inside a block, statement or expression, its scope is limited to it
+  
+Declare a read-only variable with the const keyword:
+  const has all the features of let + it is in read-only
+  once a variable is assigned with const, it cannot be reassigned
+  a common practice when declaring a constant variable is to use all uppercase letters
+  
+Mutate an array declared with const:
+  objects to a variable using const are still mutable
+  it only prevents reassignment of the variable identifier
+  const array = [ 1, 2, 3 ];
+  array = [ 1, 3, 3 ];          // returns an error
+  array[1]=3;                   // does not return an error
+  
+Prevent object mutation:
+  Object.freeze(object);
+  you can no longer add, update or delete properties
+
+Use arrow functions to write concise anonymous functions:
+  
