@@ -433,6 +433,3 @@ Use multiple conditional (ternary) operators:
   condition1 ? expression-if-true
   : condition2 ? expression-if-true
   : expression-if-false ;
-  
-Use recursion to create a countdown:
-  
