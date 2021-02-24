@@ -38,4 +38,27 @@ Use arrow functions to write concise anonymous functions:
     const myFunc = () => "value" ;
     
 Write arrow function with parameters:
+  const myFunc = (param1, param2) => statement ;        // parentheses can be omitted if only one parameter
+  
+Set default parameters for your function:
+  const myFunc = ( param1 = default value ) => statement ;
+  
+Use the rest parameters with function parameters:
+  you can create functions that take a variable number of arguments
+  function myFunc ( ...args )
+  
+Use the spread operator to evaluate arrays in-place:
+  (...arr) returns an unpacked / spread array
+  
+Use destructuring assignment to extract values from objects:
+  const object = { param1: "value1", param2: "value2" }
+  const { param1, param2 } = object ;         // creates a variable and assign the value of the corresponding parameter of the object
+  
+Use destructuring assignment to assign variables from objects:
+  you can also assign the value of a parameter of an object to a variable with a new name
+  const { param1: newName1, param2: newName2 } = object ;
+  
+Use destructuring assignment to assign variables from nested objects:
+  const { paramParent: { paramChild } } = object ;        // variable with same name as paramChild
+  const { paramParent { paramChild: newName } } = object ;
   
