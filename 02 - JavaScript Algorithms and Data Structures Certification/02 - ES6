@@ -26,4 +26,16 @@ Prevent object mutation:
   you can no longer add, update or delete properties
 
 Use arrow functions to write concise anonymous functions:
+  we often don't need to name our functions, especially when passing a function as an argument to an other function
+  we create inline functions
+  we don't need to name these functions because we do not reuse them anywhere else
+  instead of:
+    const myFunc = function() {
+      const myVar = "value" ;
+      return myVar ;
+    }
+  we say:
+    const myFunc = () => "value" ;
+    
+Write arrow function with parameters:
   
