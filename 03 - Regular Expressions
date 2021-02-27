@@ -55,4 +55,8 @@ Match characters that occur zero or more times:
   /go*/
   
 Find characters with lazy matching:
+  regex are by default greedy and will look for the largest sub-string that fits the pattern
+  you can use ? to change it to lazy matching
+  /t[a-z]*i/    // returns titani in titanic 
+  /t[a-z]*?i/   // returns ti in titanic
   
