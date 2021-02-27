@@ -60,3 +60,5 @@ Find characters with lazy matching:
   /t[a-z]*i/    // returns titani in titanic 
   /t[a-z]*?i/   // returns ti in titanic
   
+Mtach beginning string patterns:
+  
