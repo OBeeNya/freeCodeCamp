@@ -22,4 +22,21 @@ Extract matches:
   'string'.match(/regex/);     // returns regex if found
   
 Find more than the fist match:
+  use the g flag
+  let regex = /word/g;
+  string.match(regex);      // returns all occurence of regex
+  
+Match anything with wildcard period:
+  the wildcard character . will match with any one character
+  let regex = /w.rd/;
+  
+Macth single character with multiple possibilities:
+  you can search for a literal pattern with some flexibility with character classes
+  let regex = /w[aio]rd/;
+  
+Match letters of the alphabet:
+  inside a character set, you can define a range of characters to match using a -
+  let regex = /w[a-e]rd/;
+  
+Match numbers and letters of the alphabet:
   
