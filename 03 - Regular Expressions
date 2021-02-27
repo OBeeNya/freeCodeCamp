@@ -3,20 +3,23 @@
 Using the test method:
   regular expressions (regex) are used to match parts of strings
   let string = "freecodecamp";
-  let testString = /code/;
-  testString.test(string);      // true
+  let regexg = /code/;
+  /regex/.test('string');      // true
   
 Match literal strings:
   the previous method will only search for a literal match, meaning case sensitive
   
 Match a literal string with different possibilities:
   you can search for multiple patterns using the alternation or OR operator |
-  /yes|no|maybe/
+  /regex1|regex2|regex3/
   
 Ignore case while matching:
   you can match both cases using what is called a flag
   the flag that ignores the case is the i flag
-  /word/i
+  /regex/i
   
 Extract matches:
+  'string'.match(/regex/);     // returns regex if found
+  
+Find more than the fist match:
   
