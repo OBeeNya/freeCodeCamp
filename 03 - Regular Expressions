@@ -39,4 +39,6 @@ Match letters of the alphabet:
   let regex = /w[a-e]rd/;
   
 Match numbers and letters of the alphabet:
+  using a - to match a range of characters is not limited to letters
+  let regex = /[a-z0-9]/;
   
