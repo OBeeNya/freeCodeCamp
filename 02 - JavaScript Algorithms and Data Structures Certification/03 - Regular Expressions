@@ -1,0 +1,70 @@
+*** REGULAR EXPRESSIONS ***
+
+Using the test method:
+  regular expressions (regex) are used to match parts of strings
+  let string = "freecodecamp";
+  let regexg = /code/;
+  /regex/.test('string');      // true
+  
+Match literal strings:
+  the previous method will only search for a literal match, meaning case sensitive
+  
+Match a literal string with different possibilities:
+  you can search for multiple patterns using the alternation or OR operator |
+  /regex1|regex2|regex3/
+  
+Ignore case while matching:
+  you can match both cases using what is called a flag
+  the flag that ignores the case is the i flag
+  /regex/i
+  
+Extract matches:
+  'string'.match(/regex/);     // returns regex if found
+  
+Find more than the fist match:
+  use the g flag
+  let regex = /word/g;
+  string.match(regex);      // returns all occurence of regex
+  
+Match anything with wildcard period:
+  the wildcard character . will match with any one character
+  let regex = /w.rd/;
+  
+Macth single character with multiple possibilities:
+  you can search for a literal pattern with some flexibility with character classes
+  let regex = /w[aio]rd/;
+  
+Match letters of the alphabet:
+  inside a character set, you can define a range of characters to match using a -
+  let regex = /w[a-e]rd/;
+  
+Match numbers and letters of the alphabet:
+  using a - to match a range of characters is not limited to letters
+  let regex = /[a-z0-9]/;
+  
+Match single characters not specified:
+  you can also create a set of characters that you do not want to match
+  these character sets are called negated character set
+  /[^aeiou]/
+  
+Match characters that occur one or more times:
+  if you wan to match a character that apepars once or more consecutively
+  /a+/
+  
+Match characters that occur zero or more times:
+  /go*/
+  
+Find characters with lazy matching:
+  regex are by default greedy and will look for the largest sub-string that fits the pattern
+  you can use ? to change it to lazy matching
+  /t[a-z]*i/    // returns titani in titanic 
+  /t[a-z]*?i/   // returns ti in titanic
+  
+Mtach beginning string patterns:
+  ^ used outside of a chracter set is used to search for a pattern at the beginning of strings
+  /^word/
+  
+Match ending string patterns:
+  $ is used to search for a pattern at the end of strings
+  /word$/
+  
