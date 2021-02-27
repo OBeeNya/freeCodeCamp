@@ -62,3 +62,123 @@ Use destructuring assignment to assign variables from nested objects:
   const { paramParent: { paramChild } } = object ;        // variable with same name as paramChild
   const { paramParent { paramChild: newName } } = object ;
   
+Use destructuring assignment to assign variables from array:
+  [a, b] = [1, 2, 3, 4];  => a=1 and b=2
+  [a, b,,, c] = [1, 2, 3, 4, 5, 6]  => a=1, b=2 and c = 5
+  [a, b] = [b, a]
+  
+Use destructuring assignment with the rest parameter to reassign array elements:
+  const [a, b, ...c] = [1, 2, 3, 4, 5, 6]; => a=1, b=2 and c=[3,4,5,6]
+
+Use destructuring assignment to pass an object as a function's parameter:
+  ES5:
+    const profileUpdate = (profileData) => {
+      const { name, age, nationality, location } = profileData ;
+      // statements
+    }
+  ES6:
+    const profileUpdate = ({name, age, nationality, location}) => {
+      // statements
+    }
+    
+Create strings using template literals:
+  const string = `hello my name is ${object.parameter}`
+  
+Write concise object literal declarations using object property shorthand:
+  ES5:
+    const getMousePosition = (x, y) => {
+      x: x,
+      y: y
+    }).
+  ES6:
+    const getMousePosition = (x, y) => ({x, y});
+    
+Write concise declarative functions with ES6:
+  ES5:
+    const person = {
+      name: "Taylor",
+      sayHello: function() {
+        return `Hello my name is ${this.name}`;
+      }
+    };
+  ES6:
+    const person = {
+      name: "Taylor,
+      sayHello() {
+        return `Hello my name is ${this.name}`;
+      }
+    }
+    
+Use class syntax to define a constructor function:
+  E5S:
+    var SpaceShuttle = function(targetPlanet) {
+      this.targetPlanet = targetPlanet;
+    }
+    var zeus = new SpaceShuttle('Jupiter');
+  ES6:
+    classe SpaceShuttle {
+      constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+      }
+    }
+    const zeus = new SpaceShuttle('Jupiter');
+    
+Use getters and setters to control access to an object:
+  class Class {
+    constructor(parameter) {
+      this._parameter = parameter;      // it is a convention to precede the name of a private variable with an underscore
+    }
+    // getter
+    get param() {
+      return this._paramater;
+    }
+    // setter
+    set param(updatedParam) {
+      this._parameter = updatedParam;
+    }
+  }
+  const newClass = new Class('param1');
+  console.log(newClass.param);  // param1
+  newClass.param = 'newParam';
+  console.log(newClass.param);  // newParam
+
+Create a module script:
+  <script type="module" src="./filename.js"></script>
+  
+Use export to share a code block:
+  const function = (parameters) => {
+    statements;
+  }
+  export {function} ;
+  
+Reuse javascript code using import:
+  import {function} from './filename.js';
+  
+Use * to import everything from a file:
+  import * as moduleName from './filename.js';
+  then to use it :
+    moduleName.functionName(parameters);
+    
+Create an export fallback with export default:
+  export default function functionName (parameters) {
+    statements;
+  }
+  
+Import a default export:
+  import functionName from '..filename.js';
+  
+Create a javascript promise:
+  const promiseName = new Promis((resolve, reject) => {
+    if(condition) {
+      resolve(statements);
+    }
+    else {
+      reject(statements);
+    }
+    promiseName.then(result=>{
+      statements;
+    }
+    promiseName.catch(error=>{
+      statements;
+    }
+  });
