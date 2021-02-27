@@ -1,2 +1,8 @@
 *** REGULAR EXPRESSIONS ***
 
+Using the test method:
+  regular expressions (regex) are used to match parts of strings
+  let string1 = "freecodecamp";
+  let string2 = "code";
+  string2.test(string1);      // true
+  
