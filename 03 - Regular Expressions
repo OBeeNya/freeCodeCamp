@@ -61,4 +61,10 @@ Find characters with lazy matching:
   /t[a-z]*?i/   // returns ti in titanic
   
 Mtach beginning string patterns:
+  ^ used outside of a chracter set is used to search for a pattern at the beginning of strings
+  /^word/
+  
+Match ending string patterns:
+  $ is used to search for a pattern at the end of strings
+  /word$/
   
