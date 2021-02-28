@@ -24,4 +24,7 @@ Add items using splice:
   array.splice(startIndex, amountToDelete, elmentsReplacing);
   
 Copy array items using slice:
+  let newArray = array.slice(startIndex, stopIndex);      // stopIndex is not included
+  
+Copy an array with the spread operator:
   
