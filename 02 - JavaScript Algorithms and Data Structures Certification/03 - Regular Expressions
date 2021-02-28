@@ -30,7 +30,7 @@ Match anything with wildcard period:
   the wildcard character . will match with any one character
   let regex = /w.rd/;
   
-Macth single character with multiple possibilities:
+Match single character with multiple possibilities:
   you can search for a literal pattern with some flexibility with character classes
   let regex = /w[aio]rd/;
   
@@ -60,7 +60,7 @@ Find characters with lazy matching:
   /t[a-z]*i/    // returns titani in titanic 
   /t[a-z]*?i/   // returns ti in titanic
   
-Mtach beginning string patterns:
+Match beginning string patterns:
   ^ used outside of a chracter set is used to search for a pattern at the beginning of strings
   /^word/
   
