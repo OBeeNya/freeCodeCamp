@@ -88,5 +88,24 @@ Match all non-numbers:
   can be replaced by
   /\D/
   
-Restrict possible usernames:
+Match whitespace:
+  \s matches whitespace, carraige return, tab, form feed and new line characters
+  similar to the character class [ \r\t\f\n\v]
+  
+Match non-whitespace characters:
+  \S
+  similar to the character class [^ \r\t\f\n\v]
+  
+Specify upper and lower number of matches:
+  sometimes you want to match a certain range of patterns
+  you can specify the upper and lower number of patterns with quantify specifiers
+  let regex = /a{3,5}b/;
+  
+Specify only the lower number of matches:
+  let regex = /a{3,}b/;
+  
+Specify exact number of matches:
+  let regex = /a{3}b/;
+  
+Check for all or none:
   
