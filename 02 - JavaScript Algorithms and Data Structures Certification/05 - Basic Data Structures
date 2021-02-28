@@ -17,4 +17,8 @@ Remove titems from an array with pop() and shift():
   pop() removes the last and shift() removes the first element
   
 Remove items using splice():
+  splice() can take up to 3 parameters: index and number of elements are the first 2
+  array.splice(index, nb);
+  
+Add items using splice:
   
