@@ -1,0 +1,8 @@
+*** BASIC DATA STRUCTURES ***
+
+Use an array to store a collection of data:
+  all arrays have a length property that can be accessed with Array.length
+  a multi-dimensional array: an array that contains other arrays
+  
+Access an array's contents using bracket notation:
+  
