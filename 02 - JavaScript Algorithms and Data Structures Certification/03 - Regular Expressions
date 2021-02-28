@@ -108,4 +108,26 @@ Specify exact number of matches:
   let regex = /a{3}b/;
   
 Check for all or none:
+  you can specify the possible existence of an element with ? (like for lazy matching)
+  let regex = /colou?r/;
   
+Positive and negative lookahead:
+  positive lookahead will look to make sure the element in the search pattern is there but won't actually match it
+    let regex = /(?=...)/;
+  negative lookahead will look to make sure the element in the search pattern is not there
+    let regex = /(?!...)/;
+  particularly usefl to check if patterns are present in a string
+  
+Check for mixed grouping of characters:
+  let regex = /P(engu|umpk)in/;
+  
+Reuse patterns using capture groups:
+  let regex = /(pattern)\nb of capture/;
+  
+Use capture groups to search and replace:
+  you can search and replace text in a string using .replace:
+    let string = "";
+    let regex = /pattern/;
+    string.replace(regex, replacement);
+  you can also access capture groups in the replacement string with $:
+  "word1 word2".replace(/(\w+)\s(\w+)/, '$2 $1'); => "word2 word1"
