@@ -23,4 +23,24 @@ Catch unclosed parentheses, brackets, braces and quotes:
   one way to avoid this mistake is as soon as the opening character is typed, immediately include the closing match, then move the cursor back between them
   
 Catch mixed usage of single and double quotes:
+  you can escape the quotes inside the string by using the backslash (\) escape character
   
+Catch use of assignment operator instead of equality operator:
+  the assignment operator = in JavaScript assigns a value to a variable name
+  the == and === operators check for equality
+  the triple === tests for strict equality, meaning both value and type are the same
+  
+Catch missing open and closing parentheses after a function call:
+  when a function or method doesn't take any arguments, you may forget to include the empty opening and closing parentheses when calling it
+  
+Catch arguments passed in the wrong order when calling a function:
+  make sure to supply all required arguments, in the proper order to avoid these issues
+  
+Catch off by one errors when using indexing:
+  off by one errors (OBOE) crop up when you're trying to target a specific index of a string or array, or when looping over the indices of them
+  
+Use caution when reinitializing variables inside a loop:
+  printing variable values with each cycle of your loop by using console.log() can uncover buggy behavior related to resetting, or failing to reset a variable
+  
+Prevent infinite loops with a valid terminal condition:
+  it's the programmer's job to ensure that the terminal condition, which tells the program when to break out of the loop code, is eventually reached
