@@ -27,4 +27,5 @@ Copy array items using slice:
   let newArray = array.slice(startIndex, stopIndex);      // stopIndex is not included
   
 Copy an array with the spread operator:
+  let thatArray = [...thisArray];
   
