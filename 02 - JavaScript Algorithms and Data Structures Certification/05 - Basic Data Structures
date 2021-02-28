@@ -21,4 +21,7 @@ Remove items using splice():
   array.splice(index, nb);
   
 Add items using splice:
+  array.splice(startIndex, amountToDelete, elmentsReplacing);
+  
+Copy array items using slice:
   
