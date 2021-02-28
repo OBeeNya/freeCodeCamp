@@ -6,4 +6,21 @@ Issues in code generally come in 3 forms:
   logical errors where your code doesn't do what you intended
   
 Use the javascript console to check the value of a variable:
+  use console.log() at strategic points to show the intermediate values of variables
+  
+Understanding the difference between the freecodecamp and browser console:
+  if you want the browser console to mimic the freecodecamp console, place console.clear() before any other console calls, to clear the browser console
+  
+Use typeof to check the type of a variable:
+  javascript recognizes 6 primitive (immutable) data types: boolean, null, undefined, number, string and symbol
+  and 1 mutable type: object
+  console.log(typeof "");
+  
+Catch misspelled variable and function names:
+  one syntax-level issue that fast typers can commiserate with is the humble spelling error
+  
+Catch unclosed parentheses, brackets, braces and quotes:
+  one way to avoid this mistake is as soon as the opening character is typed, immediately include the closing match, then move the cursor back between them
+  
+Catch mixed usage of single and double quotes:
   
