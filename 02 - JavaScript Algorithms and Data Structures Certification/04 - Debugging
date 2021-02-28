@@ -1,0 +1,9 @@
+*** DEBUGGING ***
+
+Issues in code generally come in 3 forms:
+  syntax errors that prevenet your program from running
+  runtime errors where your code has unexpected bzhavior
+  logical errors where your code doesn't do what you intended
+  
+Use the javascript console to check the value of a variable:
+  
