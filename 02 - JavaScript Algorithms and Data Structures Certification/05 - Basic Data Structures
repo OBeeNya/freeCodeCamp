@@ -75,3 +75,12 @@ Check if an object has a property:
     users.hasOwnProperty('Alan');
     'Alan' in users;
     
+Iterate through the keys of an object with a for... in statement:
+  for (let user in users) {
+    console.log(user);
+  }
+  bracket notation must be used to call a variable property name (i.e. an object nested within an object for example)
+  
+Generate an array of all object keys with Object.keys():
+  Object.keys(object);
+  this will return an array with strings representing each property in the object
