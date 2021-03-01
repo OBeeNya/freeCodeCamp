@@ -14,3 +14,14 @@ Reverse a string:
   return reversedStr;
   }
   
+Factorialize a number:
+  function factorialize(num) {
+    var numb=1;
+    for(let i=num;i>0;i--){
+      numb *= i;
+    }
+    return numb;
+  }
+  
+Find the longest word in a string:
+  
