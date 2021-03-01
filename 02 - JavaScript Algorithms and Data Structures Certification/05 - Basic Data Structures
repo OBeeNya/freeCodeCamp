@@ -59,3 +59,19 @@ Add key-value paris to javascript objects:
       const eyes = 'eye color';
       tekkenCharacter[eyes] = 'brown';
 
+Modify an objected nested within an object:
+  while structures can quickly become complex, we can still use the same notations to access the information we need:
+    nestedObject.data.onlineStatus.busy = 10;
+    
+Access property names with bracket notation:
+  let inventory = foods[selectedFood];
+  bracket notation is very useful because sometimes object properties are not known before runtime or we need to access them in a more dynamic way
+  
+Use the delete keyword to remove objects properties:
+  delete foods.apples;
+
+Check if an object has a property:
+  javaScript provides us with two different ways to do this:
+    users.hasOwnProperty('Alan');
+    'Alan' in users;
+    
