@@ -37,4 +37,8 @@ Combine arrays with the spread operator:
   returns the index or -1 if not present
   
 Iterate through all an array's items using for loops:
+  for(met i=0;i<array.length;i++){
+    statements;
+  }
+  
   
