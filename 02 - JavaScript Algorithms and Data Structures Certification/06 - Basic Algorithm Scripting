@@ -36,4 +36,17 @@ Find the longest word in a string:
   }
   
 Return larger numbers in arrays:
+  function largestOfFour(arr) {
+  var largestArray=[arr[0][0],arr[1][0],arr[2][0],arr[3][0]];
+  for(let i=0;i<4;i++){
+    for(let j=1;j<arr[i].length;j++){
+        if(arr[i][j]>largestArray[i]){
+          largestArray[i]=arr[i][j];
+        }      
+      }
+    }
+  return largestArray;
+}
+
+Confirm the ending:
   
