@@ -62,4 +62,19 @@ Confirm the ending:
   }
   
 Repeat a string repeat a string:
+  function repeatStringNumTimes(str, num) {
+    var string = str.split();
+    if(num<1){
+      return '';
+    }
+    else{
+      for(let i=1;i<num;i++){
+        string.push(str);
+      }
+      string=string.join('');
+      return string;
+    }
+  }
+  
+Truncate a string:
   
