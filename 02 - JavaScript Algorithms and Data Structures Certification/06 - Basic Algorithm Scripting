@@ -77,4 +77,21 @@ Repeat a string repeat a string:
   }
   
 Truncate a string:
+  function truncateString(str, num) {
+    var string=str.split('');
+    var result=[];
+    if(num>=string.length){
+      return str;
+    }
+    else{
+      for(let i=0;i<num;i++){
+        result[i]=string[i];
+      }
+      result.push('...');
+      result=result.join('');
+      return result;
+    }
+  }
+  
+Finders keepers:
   
