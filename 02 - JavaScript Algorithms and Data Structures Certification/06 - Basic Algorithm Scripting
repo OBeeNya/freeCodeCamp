@@ -113,6 +113,8 @@ Boo who:
 
 Title case a sentence:
   function titleCase(str) {
+  // transform all the string in lowercase
+  // then replace in uppercase the pattern (beginning of string OR whitespace + non-whitespace)each
     return str.toLowerCase().replace(/(^|\s)\S/g, L=>L.toUpperCase());
   }
 
