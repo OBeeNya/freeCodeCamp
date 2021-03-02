@@ -133,3 +133,5 @@ Slice and splice:
     return arr3;
   }
   
+Falsy bouncer:
+  
