@@ -49,4 +49,17 @@ Return larger numbers in arrays:
 }
 
 Confirm the ending:
+  function confirmEnding(str, target) {
+    let string = str.split('');
+    let targ = target.split('');
+    let check = string.slice(string.length-targ.length,string.length);
+    for(let i=0;i<targ.length;i++){
+      if(check[i]!=targ[i]){
+        return false;
+      }
+    }
+    return true;
+  }
+  
+Repeat a string repeat a string:
   
