@@ -123,4 +123,12 @@ Reset an inherited constructor property:
   duck.constructor=Bird;
   
 Add methods after inheritance:
+  Bird.prototype.functionName = function() {
+    statements;
+  };
+  
+Override inherited methods:
+  it's possible to override an inherited method by adding a method to ChildObject.prototype using the same method name as the one to override
+  
+Use a mixin to add common behavior between unrelated objects:
   
