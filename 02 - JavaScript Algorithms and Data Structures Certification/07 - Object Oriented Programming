@@ -52,4 +52,11 @@ Verify an object's constructor with instanceOf:
   instanceName instanceof ConstructorName;          // returns true or false
   
 Understand own properties:
+  own properties are defined as such because they are defined directly on the instance object
+ 
+Use prototype properties to reduce duplicate code:
+  if a property will always be the same for each instance, properties in prototype are shared among all of them
+  ContructorName.prototype.popertyName = x ;
+  
+Iterate over all properties:
   
