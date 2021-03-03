@@ -19,4 +19,9 @@ Avoid mutations an side effects using functional programming:
   ideally, a function should be pure
   
 Pass arguments to avoid external dependance in a function:
+  another principle of functional programming is to always declare your dependencies explicitly
+  this means if a function depends on a variable or object being present, then pass that variable or object directly into the function as an argument
   
+Refactor global variables out of functions:
+  careful: var newArr = arr does NOT create a new array, but creates a reference => if you modify newArr, this will alter arr as well
+  any computation inside a function depends only on the arguments passed to the function, and not on any global object or variable
