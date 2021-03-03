@@ -81,4 +81,37 @@ Change the prototype to a new object:
     }
     
 Remember to set the constructor property when changing the prototype:
+  manually setting up a prototype (as per previous step) erases the constructor property of the instance
+  to fix this, define the constructor property whenever manually setting a new prototype
+  Bird.prototype = {
+    constructor: Bird,
+    numLegs: 2,
+    eat: function() {
+      console.log("nom nom nom");
+    }
+  }
+  
+Understand where an object's prototype comes from:
+  Bird.prototype.isPrototypeOf(duck);           // returns true
+  
+Understand the prototype chain:
+  all objects have a prototype
+  an object's prototype is also an object
+  therefore an object's prototype can have its own prototype
+  Object.prototype is the prototype of custom Constructor.prototype
+  hasOwnProperty method is defined in Object.prototype
+  Object.prototype is a supertype for Bird and duck
+  duck is a subtype for Bird and Object.prototype
+  
+Use inheritance so you don't repeat yourself:
+  principle in programming called Don't Repeat Yourself (DRY)
+  if for example a method is shared by objects of different prototypes, you can create a supertype including that method
+  
+Inherit behaviors from a supertype:
+  let duck = Object.create(Animal.prototype);
+  
+Set the child's prototype to an instance of the parent:
+  Bird.prototype = Object.Create(Animal.prototype);
+  
+Reset an inherited constructor property:
   
