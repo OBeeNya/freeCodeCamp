@@ -168,4 +168,10 @@ Mutations:
   }
   
 Chunky monkey:
-  
+  function chunkArrayInGroups(arr, size) {
+    var newArr=[];
+    for(let i=0;i<arr.length/size;i++){
+      newArr[i]=arr.slice(size*i,i*size+size);
+    }
+    return newArr;
+  }
