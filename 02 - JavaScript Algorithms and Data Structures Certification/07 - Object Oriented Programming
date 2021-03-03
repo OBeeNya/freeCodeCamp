@@ -68,3 +68,8 @@ Iterate over all properties:
     }
   }
   
+Understand the constructor property:
+  instanceName.constructor === ConstructorName ;        // returns true if the constructor created that instance
+  
+Change the prototype to a new object:
+  
