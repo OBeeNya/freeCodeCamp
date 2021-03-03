@@ -12,4 +12,5 @@ Use dot notation to access the properties of an object:
   console.log(dog.name);
   
 Create a method on an object:
+  objects can have a special type of property, called a method
   
