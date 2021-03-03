@@ -8,3 +8,8 @@ Create a basic javascript object:
     numLegs: 4
   };
   
+Use dot notation to access the properties of an object:
+  console.log(dog.name);
+  
+Create a method on an object:
+  
