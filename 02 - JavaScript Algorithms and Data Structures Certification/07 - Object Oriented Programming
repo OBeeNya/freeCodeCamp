@@ -35,3 +35,6 @@ Define a constructor function:
   constructors use the keyword this to set properties of the object they will create
   constructors define properties and behaviors instead of returning a value as other functions might
   
+Use a constructor to create an object:
+  let blueBird = new Bird();              // notice the use of the new operator
+  
