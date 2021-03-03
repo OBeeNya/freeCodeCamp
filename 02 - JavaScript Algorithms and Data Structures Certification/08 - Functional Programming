@@ -13,5 +13,10 @@ Understand functional programming terminology:
   the functions that take a function as an argument, or return a function as a return value are called higher order functions
   when the functions are passed in to another function or returned from another function, then those functions which gets passed in or returned can be called a lambda
   
-Understand the hazards of using imperative code:
+Avoid mutations an side effects using functional programming:
+  one of the core principles of functional programming is not to change things
+  in functional programming, changing or altering things is called mutation, and that outcome is called side-effect
+  ideally, a function should be pure
+  
+Pass arguments to avoid external dependance in a function:
   
