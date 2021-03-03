@@ -59,4 +59,12 @@ Use prototype properties to reduce duplicate code:
   ContructorName.prototype.popertyName = x ;
   
 Iterate over all properties:
+  for (property in duck){
+    if (duck.hasOwnProperty(property)){
+      ownProp.push(property);
+    }
+    else {
+      protoProp.push(property);
+    }
+  }
   
