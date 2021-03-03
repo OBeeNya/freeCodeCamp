@@ -143,4 +143,38 @@ Use a mixin to add common behavior between unrelated objects:
   bird.fly();
   
 Use closure to protect properties within an object from being modified eternally:
+  an object's property declared basically can be modified unvoluntarily by some external code
+  to prevent that, make the property private by creating a variable within the function (therefore only accessible within the constructor function)
+  function Bird() {
+    let hatchedEgg = 10;
+    this.getHatchedEggCount = function() { 
+      return hatchedEgg;
+    };
+  }
   
+Understand the immediately invoked function expression (IIFE):
+  (function () {
+    statements;
+  })();
+  executes the function as soon as it is declared
+  note that the function has no name and is not stored in a variable
+  the () at the end provokes the immediate execution
+  
+Use an IIFE to create a module:
+  an IIFE is often used to group related functionality into a single object or module
+  let motionModule = (function () {
+    return {
+      glideMixin: function(obj) {
+        obj.glide = function() {
+          console.log("Gliding on the water");
+        };
+      },
+      flyMixin: function(obj) {
+        obj.fly = function() {
+          console.log("Flying, wooosh!");
+        };
+      }
+    }
+  })();
+  motionModule.glideMixin(duck);
+  duck.glide();
