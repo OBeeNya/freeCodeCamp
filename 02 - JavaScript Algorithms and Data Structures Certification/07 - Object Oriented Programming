@@ -20,4 +20,9 @@ Create a method on an object:
   };
 
 Make code more reusable with the this keyword:
+  in the current context, this refers to the object that the method is associated with
+  if the object's name is changed, it is not necessary to find all its references in the code
+  sayName: function(){return "woof woof "+this.name;}
+  
+Define a constructor function:
   
