@@ -47,4 +47,9 @@ Extend constructors to receive arguments:
   let newBird = new Bird("Bruce", "red");
   
 Verify an object's constructor with instanceOf:
+  anytime a constructor function creates a new object, that object is said to be an instance of its constructor
+  instanceof allows you to compare an object to a constructor, returning true or false based on whether or not that object was created with the constructor
+  instanceName instanceof ConstructorName;          // returns true or false
+  
+Understand own properties:
   
