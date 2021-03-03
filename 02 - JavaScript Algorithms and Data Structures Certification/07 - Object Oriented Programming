@@ -114,4 +114,13 @@ Set the child's prototype to an instance of the parent:
   Bird.prototype = Object.Create(Animal.prototype);
   
 Reset an inherited constructor property:
+  when an object inherits its prototype from another object, it also inherits the supertype's constructor property
+  you can manually set Bird's constructor property to the Bird object
+  function Animal() { }
+  function Bird() { }
+  Bird.prototype = Object.create(Animal.prototype);
+  let duck = new Bird();
+  duck.constructor=Bird;
+  
+Add methods after inheritance:
   
