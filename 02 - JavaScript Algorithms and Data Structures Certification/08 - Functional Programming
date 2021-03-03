@@ -25,3 +25,6 @@ Pass arguments to avoid external dependance in a function:
 Refactor global variables out of functions:
   careful: var newArr = arr does NOT create a new array, but creates a reference => if you modify newArr, this will alter arr as well
   any computation inside a function depends only on the arguments passed to the function, and not on any global object or variable
+
+Use the map method to extract data from an array:
+  
