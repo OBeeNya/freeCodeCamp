@@ -13,4 +13,11 @@ Use dot notation to access the properties of an object:
   
 Create a method on an object:
   objects can have a special type of property, called a method
+  method are properties that are functions
+  let dog = {
+    name: "doggie",
+    sayName: function(){return "woof woof "+dog.name;}
+  };
+
+Make code more reusable with the this keyword:
   
