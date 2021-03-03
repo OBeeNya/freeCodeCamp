@@ -7,3 +7,11 @@ Learn about functional programming:
   pure functions: same input always gives the same output
   functions with limited side effects
   
+Understand functional programming terminology:
+  callbacks are the functions that are slipped or passed into another function to decide the invocation of that function
+  unctions that can be assigned to a variable, passed into another function, or returned from another function, are called first class functions
+  the functions that take a function as an argument, or return a function as a return value are called higher order functions
+  when the functions are passed in to another function or returned from another function, then those functions which gets passed in or returned can be called a lambda
+  
+Understand the hazards of using imperative code:
+  
