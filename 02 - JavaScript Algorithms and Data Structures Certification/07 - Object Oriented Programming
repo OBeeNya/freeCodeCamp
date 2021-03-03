@@ -72,4 +72,13 @@ Understand the constructor property:
   instanceName.constructor === ConstructorName ;        // returns true if the constructor created that instance
   
 Change the prototype to a new object:
+  efficient way to set the prototype t a new object that aleady contains the properties:
+    Bird.prototype = {
+      numLegs: 2,
+      eat: function() {
+        console.log("nom nom nom");
+      }
+    }
+    
+Remember to set the constructor property when changing the prototype:
   
