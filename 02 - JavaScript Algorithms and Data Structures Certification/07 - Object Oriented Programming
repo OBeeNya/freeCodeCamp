@@ -38,3 +38,11 @@ Define a constructor function:
 Use a constructor to create an object:
   let blueBird = new Bird();              // notice the use of the new operator
   
+Extend constructors to receive arguments:
+  function Bird (name, color) {
+    this.name=name;
+    this.color=color;
+    this.numLegs=4;
+  }
+  let newBird = new Bird("Bruce", "red");
+  
