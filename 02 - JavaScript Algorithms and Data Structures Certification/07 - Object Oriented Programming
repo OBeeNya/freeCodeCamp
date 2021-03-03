@@ -25,4 +25,13 @@ Make code more reusable with the this keyword:
   sayName: function(){return "woof woof "+this.name;}
   
 Define a constructor function:
+  constructors are functions that create new objects
+  function Bird() {
+    this.name = "Albert";
+    this.color = "blue";
+    this.numLegs = 2;
+  }
+  constructors are defined with a capitalized name to distinguish them from other functions
+  constructors use the keyword this to set properties of the object they will create
+  constructors define properties and behaviors instead of returning a value as other functions might
   
