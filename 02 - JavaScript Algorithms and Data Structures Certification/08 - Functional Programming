@@ -3,4 +3,7 @@
 In functional programming, code is organized into smaller, basic functions that can be combined to build complex programs
 
 Learn about functional programming:
+  isolated functions: no dependance of the state of the program
+  pure functions: same input always gives the same output
+  functions with limited side effects
   
