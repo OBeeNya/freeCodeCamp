@@ -46,3 +46,5 @@ Extend constructors to receive arguments:
   }
   let newBird = new Bird("Bruce", "red");
   
+Verify an object's constructor with instanceOf:
+  
