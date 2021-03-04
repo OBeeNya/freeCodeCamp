@@ -27,4 +27,8 @@ Refactor global variables out of functions:
   any computation inside a function depends only on the arguments passed to the function, and not on any global object or variable
 
 Use the map method to extract data from an array:
+  map method iterates over each item in an array and returns a new array containing the results of calling the callback function on each element
+  const names = users.map(user => user.name);
+  
+Implement map on a prototype:
   
