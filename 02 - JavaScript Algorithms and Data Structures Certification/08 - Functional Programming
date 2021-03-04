@@ -31,4 +31,13 @@ Use the map method to extract data from an array:
   const names = users.map(user => user.name);
   
 Implement map on a prototype:
+  Array.prototype.myMap = function(callback) {
+    var newArray = [];
+    for(let i=0;i<this.length;i++){
+      newArray[i]=callback(this[i]);
+    }
+    return newArray;
+  };
+  
+Use the filter method to extract data from an array:
   
