@@ -78,4 +78,9 @@ Add elements to the end of an array using concat instead of push:
   concat offers a way to add new items to the end of an array without any mutating side effects
 
 Use the reduce method to analyze data:
+  var array=watchList.filter(item=>item['Director']=="Christopher Nolan");
+  var sumOfRatings=array.reduce((sum, movie)=>sum+parseFloat(movie['imdbRating']),0);
+  var averageRating=sumOfRatings/array.length;
+  
+Usse higher-order functions map, filter, or reduce to solve a complex problem:
   
