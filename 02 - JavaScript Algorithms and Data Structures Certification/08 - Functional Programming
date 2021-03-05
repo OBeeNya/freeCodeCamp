@@ -83,4 +83,10 @@ Use the reduce method to analyze data:
   var averageRating=sumOfRatings/array.length;
   
 Use higher-order functions map, filter, or reduce to solve a complex problem:
+  var squareArr=arr.filter(item=>item>0)
+    .filter(item=>item%1==0)
+    .map(item=>item=item*item);
+  return squareArr;
+  
+Sort an array alphabetically using the sort method:
   
