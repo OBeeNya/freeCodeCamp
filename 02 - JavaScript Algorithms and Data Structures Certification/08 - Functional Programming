@@ -143,4 +143,14 @@ Use the same method to check that any elements in an array meet a criteria:
   }
   
 Introduction to currying and partial application:
-  
+  the arity of a function is the number of arguments it requires
+  currying a function means to convert a function of N arity into N functions of arity 1
+  this is useful in your program if you can't supply all the arguments to a function at one time
+  you can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available
+    const curried = x => y => x + y
+  similarly, partial application can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments
+    function impartial(x, y, z) {
+      return x + y + z;
+    }
+    var partialFn = impartial.bind(this, 1, 2);
+    partialFn(10); // 13
