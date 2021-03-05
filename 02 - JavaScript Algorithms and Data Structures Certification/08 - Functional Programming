@@ -82,5 +82,5 @@ Use the reduce method to analyze data:
   var sumOfRatings=array.reduce((sum, movie)=>sum+parseFloat(movie['imdbRating']),0);
   var averageRating=sumOfRatings/array.length;
   
-Usse higher-order functions map, filter, or reduce to solve a complex problem:
+Use higher-order functions map, filter, or reduce to solve a complex problem:
   
