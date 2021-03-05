@@ -89,4 +89,36 @@ Use higher-order functions map, filter, or reduce to solve a complex problem:
   return squareArr;
   
 Sort an array alphabetically using the sort method:
+  when such a callback function, normally called compareFunction, is supplied, the array elements are sorted according to the return value of the compareFunction
+  if compareFunction(a,b) returns a value less than 0 for two elements a and b, then a will come before b
+  if compareFunction(a,b) returns a value greater than 0 for two elements a and b, then b will come before a
+  if compareFunction(a,b) returns a value equal to 0 for two elements a and b, then a and b will remain unchanged
+  function alphabeticalOrder(arr) {
+    return arr.sort(function(a, b){
+      return a===b?0:a>b?1:-1;
+    })
+  }
+  
+Return a sorted array without changing the original array:
+  function nonMutatingSort(arr) {
+    var sortedArray=arr.slice();
+    sortedArray.sort(function(a,b){
+      return a-b;
+    })
+    return sortedArray;
+  }
+  
+Split a string into an array using the split method:
+  function splitify(str) {
+    var stringArray=str.split(/\s|,|-|[.]/);
+    return stringArray;
+  }
+  
+Combine an array into a string using the join method:
+  function sentensify(str) {
+    var result=str.split(/-|[.]|,/).join(' ');
+    return result;
+  }
+  
+Apply functional programming to convert strings to URL slugs:
   
