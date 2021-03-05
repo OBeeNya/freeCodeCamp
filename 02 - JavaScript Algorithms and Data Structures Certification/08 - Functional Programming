@@ -40,4 +40,14 @@ Implement map on a prototype:
   };
   
 Use the filter method to extract data from an array:
+  filter calls a function on each element of an array and returns a new array containing only the elements for which that function returns true
+  var filteredList= watchList.map(item=>({
+    title: item['Title'],
+    rating: item['imdbRating']
+  }) )
+  .filter(item=>(
+    parseFloat(item.rating)>=8            // item.rating because watchList.map before changed it
+  ))
+  
+Implement the filter method on a prototype:
   
