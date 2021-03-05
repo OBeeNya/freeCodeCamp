@@ -121,4 +121,26 @@ Combine an array into a string using the join method:
   }
   
 Apply functional programming to convert strings to URL slugs:
+  function urlSlug(title) {
+    return title.toLowerCase()
+      .trim()
+      .split(/\s+/)
+      .join('-');
+  }
+  
+Use the every method to check that every element in an array meets a criteria:
+  function checkPositive(arr) {
+    return arr.every(function(currentValue){
+      return currentValue>0;                  // returns bolean
+    });
+  }
+  
+Use the same method to check that any elements in an array meet a criteria:
+  function checkPositive(arr) {
+    return arr.some(function(currentValue){
+      return currentValue>0;
+    })
+  }
+  
+Introduction to currying and partial application:
   
