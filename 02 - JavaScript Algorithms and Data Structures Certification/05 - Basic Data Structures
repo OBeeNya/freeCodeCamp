@@ -32,7 +32,7 @@ Copy an array with the spread operator:
 Combine arrays with the spread operator:
   let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
  
- Check for the presence of an element with indexOf:
+Check for the presence of an element with indexOf:
   array.indexOf(element);
   returns the index or -1 if not present
   
