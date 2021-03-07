@@ -65,4 +65,15 @@ Wherefore art thou:
   }
   
 Spinal tap case:
+  function spinalCase(str) {
+    var string =str;
+    string=string.trim()
+      .split(/(?=[A-Z])|\s|_/)
+      .join('-')
+      .toLowerCase();
+    console.log(string);
+    return string;
+  }
+  
+Pig latin:
   
