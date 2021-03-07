@@ -1,4 +1,20 @@
 *** INTERMEDIATE ALGORITHM SCRIPTING ***
 
 Sum all numbers in a range:
+  function sumAll(arr) {
+    var sortedArr=arr.sort(function(a,b){
+      return a-b;
+    });
+    var result=0;
+    var newArr=sortedArr.slice();
+    for(let i=0;i<(sortedArr[1]-sortedArr[0]-1);i++){
+      newArr.splice(i+1,0,newArr[i]+1)
+    }
+    for(let i=0;i<newArr.length;i++){
+      result+=newArr[i];
+    }
+    return result;
+  }
+  
+Diff two arrays:
   
