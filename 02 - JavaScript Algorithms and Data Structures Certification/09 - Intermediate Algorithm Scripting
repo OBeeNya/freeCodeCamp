@@ -33,4 +33,18 @@ Diff two arrays:
   }
   
 Seek and destroy:
+  function destroyer(arr, ...arg) {
+    var resultArr=arr.slice('');
+      arg.forEach(arg=>{
+        if(resultArr.indexOf(arg)!=-1){
+          resultArr.splice(resultArr.indexOf(arg),1)
+      }
+        if(resultArr.indexOf(arg)!=-1){
+          resultArr.splice(resultArr.indexOf(arg),1)
+      }
+    })
+    return resultArr;
+  }
+  
+Wherefore art thou:
   
