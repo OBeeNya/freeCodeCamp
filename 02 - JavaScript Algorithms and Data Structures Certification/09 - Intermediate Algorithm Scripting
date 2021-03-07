@@ -47,4 +47,22 @@ Seek and destroy:
   }
   
 Wherefore art thou:
+  function whatIsInAName(collection, source) {
+    var arr = [];
+    var sourceKeys=Object.keys(source);
+    for(let i=0;i<collection.length;i++){
+      var nbKeys=0;
+      for(let j=0;j<sourceKeys.length;j++){
+        if(collection[i][sourceKeys[j]]==source[sourceKeys[j]]){
+          nbKeys++;
+        }
+        if(nbKeys==sourceKeys.length){
+          arr.push(collection[i]);
+        }
+      }
+    }
+    return arr;
+  }
+  
+Spinal tap case:
   
