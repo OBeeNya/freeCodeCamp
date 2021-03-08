@@ -76,4 +76,26 @@ Spinal tap case:
   }
   
 Pig latin:
+  function translatePigLatin(str) {
+    var string=str.split('');
+    var vowels=['a','e','i','o','u'];
+    if(vowels.indexOf(string[0])!=-1){
+      string.push('way');
+    }
+    else if(str.match(/[aeiou]/)==null){
+      string.push('ay');
+    }
+    else{
+      var clust=str.match(/^[zrtypqsdfghjklmwxcvbn]+/g);
+      var clustLength=clust[0].length;
+      clust.join('')
+      string.push(clust);
+      string.splice(0,clustLength);
+      string.push('ay');
+    }
+    string=string.join('');
+    return string;
+  }
+  
+Search and replace:
   
