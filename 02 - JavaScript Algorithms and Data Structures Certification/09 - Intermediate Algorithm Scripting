@@ -114,4 +114,25 @@ Search and replace:
   }
   
 DNA pairing:
+  function pairElement(str) {
+    var string=str.split('');
+    var stringResult=[];
+    for(let i=0;i<string.length;i++){
+      if(string[i]=='A'){
+        stringResult.push(["A","T"]);
+      }
+      else if(string[i]=='T'){
+        stringResult.push(["T","A"]);
+      }
+      else if(string[i]=='C'){
+        stringResult.push(["C","G"]);
+      }
+      else if(string[i]=='G'){
+        stringResult.push(["G","C"]);
+      }
+    }
+    return stringResult;
+  }
+  
+Missing letters:
   
