@@ -98,4 +98,20 @@ Pig latin:
   }
   
 Search and replace:
+  function myReplace(str, before, after) {
+    var string=str.split('')
+    var aftStr=after.split('');
+    if(before.match(/^[A-Z]/)!=null){
+      aftStr[0]=aftStr[0].toUpperCase(); 
+    }
+    else{
+      aftStr[0]=aftStr[0].toLowerCase();
+    };
+    aftStr=aftStr.join('');
+    string.splice(str.match(before).index,before.length);
+    string.splice(str.match(before).index,0,aftStr);
+    return string.join('');
+  }
+  
+DNA pairing:
   
