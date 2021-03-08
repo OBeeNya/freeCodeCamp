@@ -135,4 +135,17 @@ DNA pairing:
   }
   
 Missing letters:
+  function fearNotLetter(str) {
+    var string=str.split('');
+    var alphabet='abcdefghijklmnopqrstuvwxyz';
+    if(alphabet.indexOf(string[string.length-1])-alphabet.indexOf(string[0])+1!=string.length){
+      for(let i=1;i<string.length;i++){
+        if(alphabet.indexOf(string[i])!=alphabet.indexOf(string[i-1])+1){
+          return alphabet[i+alphabet.indexOf(string[0])];
+        }
+      }
+    }
+  }
+  
+Sorted union:
   
