@@ -161,4 +161,30 @@ Sorted union:
   }
   
 Convert HTML entities:
+  function convertHTML(str) {
+    var resultStr=str.split('');
+    for(let i=0;i<resultStr.length;i++){
+      switch(resultStr[i]){
+        case "&":
+        resultStr[i]="&amp;";
+        break;
+        case "<":
+        resultStr[i]="&lt;";
+        break;
+        case ">":
+        resultStr[i]="&gt;";
+        break;
+        case '"':
+        resultStr[i]="&quot;";
+        break;
+        case "'":
+        resultStr[i]="&apos;";
+        break;
+      }
+    }
+    resultStr=resultStr.join('');
+    return resultStr;
+  }
+  
+Sum all odd Fibonacci numbers:
   
