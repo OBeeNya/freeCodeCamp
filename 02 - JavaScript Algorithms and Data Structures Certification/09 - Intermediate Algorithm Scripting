@@ -223,4 +223,18 @@ Sum all primes:
   }
   
 Smallest common multiple:
+  ***************************************************
+  
+Drop it:
+  function dropElements(arr, func) {
+    var array=[];
+    var index=0;
+    while(func(arr[index])==false){
+      index++;
+    }
+    array=arr.slice(index,arr.length);
+    return array;
+  }
+
+Steamroller:
   
