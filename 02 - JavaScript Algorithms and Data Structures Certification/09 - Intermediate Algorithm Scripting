@@ -237,4 +237,20 @@ Drop it:
   }
 
 Steamroller:
+  ***************************************************
+
+Binary agents:
+  ***************************************************
+  
+Everything be true:
+  function truthCheck(collection, pre) {
+    for(let i=0;i<collection.length;i++){
+      if(collection[i].hasOwnProperty(pre)==false|collection[i][pre]==false|collection[i][pre]==0|collection[i][pre]==undefined|Object.is(collection[i][pre], NaN)){
+        return false;
+      }
+    }
+    return true;
+  }
+  
+Arguments optional:
   
