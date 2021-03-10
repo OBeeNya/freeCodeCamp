@@ -253,4 +253,40 @@ Everything be true:
   }
   
 Arguments optional:
+   *************************************************** 
+
+Make a person:
+  var Person = function(firstAndLast) {
+    this.getFirstName = function(){
+      var fullName=firstAndLast.split(' ');
+      return fullName[0];
+    };
+    this.getLastName=function(){
+      var fullName=firstAndLast.split(' ');
+      return fullName[1];
+    }
+    this.getFullName = function() {
+      return firstAndLast;
+    };
+    this.setFirstName = function(x){
+      var fullName=firstAndLast.split(' ');
+      fullName[0]=x;
+      firstAndLast=fullName.join(' ');
+    }
+    this.setLastName = function(x){
+      var fullName=firstAndLast.split(' ');
+      fullName[1]=x;
+      firstAndLast=fullName.join(' ');
+    }
+    this.setFullName = function(x){
+      var fullName=firstAndLast.split(' ');
+      var temp=x.split(' ');
+      fullName[0]=temp[0];
+      fullName[1]=temp[1];
+      firstAndLast=fullName.join(' ');
+    }
+    return firstAndLast;
+  };
+
+Map the debris:
   
