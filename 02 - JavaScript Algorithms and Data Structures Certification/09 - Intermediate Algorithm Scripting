@@ -223,7 +223,26 @@ Sum all primes:
   }
   
 Smallest common multiple:
-  ***************************************************
+  function smallestCommons(arr) {
+    var array=arr.splice('');
+    if(array[1]<array[0]){
+      array.sort();
+    }
+    var table=[];
+    for(let i=array[0];i<=array[1];i++){
+      table.push(i);
+    }
+    var result=table[0]*table[1];
+    for(let i=2;i<table.length;i++){
+      if(table[i]%result!=0){
+        var temp=result;
+        while(result%table[i]!=0){  
+          result=result+temp;
+        }
+      }
+    }
+    return result;
+  }
   
 Drop it:
   function dropElements(arr, func) {
