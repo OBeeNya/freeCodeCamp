@@ -187,4 +187,19 @@ Convert HTML entities:
   }
   
 Sum all odd Fibonacci numbers:
+  function sumFibs(num) {
+    var result=0;
+    var fib=1;
+    var fibNumbers=[1];
+    for(let i=0;fibNumbers[i]<=num;i++){
+      fibNumbers.push(fib);
+      fib=fib+fibNumbers[i];
+      if(fibNumbers[i]%2!=0){
+        result=result+fibNumbers[i];
+      }
+    }
+    return result;
+  }
+  
+Sum all primes:
   
