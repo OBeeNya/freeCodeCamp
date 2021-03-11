@@ -269,7 +269,22 @@ Steamroller:
   }
 
 Binary agents:
-  ***************************************************
+  function binaryAgent(str) {
+    var split=str.split(' ');
+    var resArr=[];
+    for(let i=0;i<split.length;i++){
+      var splito=split[i].split('');
+      var valsplito=0;
+      for(let j=0;j<splito.length;j++){
+      if(splito[j]==1){
+        valsplito+=Math.pow(2,splito.length-j-1);
+      }
+      var test=String.fromCharCode(valsplito);
+      }
+      resArr.push(test);
+    }
+    return resArr.join('');
+  }
   
 Everything be true:
   function truthCheck(collection, pre) {
