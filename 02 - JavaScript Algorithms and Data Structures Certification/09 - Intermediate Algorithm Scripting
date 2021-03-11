@@ -256,7 +256,17 @@ Drop it:
   }
 
 Steamroller:
-  ***************************************************
+  function steamrollArray(arr, result=[]) {
+    arr.forEach(item=>{
+      if(Array.isArray(item)){
+        steamrollArray(item, result);
+      }
+      else{
+        result.push(item);
+      }
+    })
+    return result;
+  }
 
 Binary agents:
   ***************************************************
