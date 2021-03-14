@@ -297,7 +297,34 @@ Everything be true:
   }
   
 Arguments optional:
-   *************************************************** 
+  function addTogether() {
+    function checkNum(x){
+      if(typeof x == 'number'){
+        return true;
+      }
+      else{
+        return false;
+      }
+    }
+    if(arguments.length==2){
+      var first=arguments[0];
+      var second=arguments[1];
+      if(checkNum(first)&&checkNum(second)){
+        return first+second;
+      }
+    }
+    else{
+      var first=arguments[0];
+      if(checkNum(first)){
+        function addSecond(second){
+          if(checkNum(second)){
+            return first+second;
+          }
+        }
+        return addSecond;
+      }
+    }
+  }
 
 Make a person:
   var Person = function(firstAndLast) {
