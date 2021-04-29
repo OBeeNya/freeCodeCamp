@@ -1,13 +1,13 @@
-// *** ES6 ***
+*** ES6 ***
 
-// Explore differences between the var and let keywords:
-  // unlike var, when using let, a variable with the same name can only be declared once
+Explore differences between the var and let keywords:
+  unlike var, when using let, a variable with the same name can only be declared once
   let varName = "cat";
   let varName = "dog";      // returns an error
   
-// Compare scopes of the var and let keywords:
-  // a var keyword is declared globally or locally if declared in a function
-  // if you declare a variable with the let keyword inside a block, statement or expression, its scope is limited to it
+Compare scopes of the var and let keywords:
+  a var keyword is declared globally or locally if declared in a function
+  if you declare a variable with the let keyword inside a block, statement or expression, its scope is limited to it
   
 Declare a read-only variable with the const keyword:
   const has all the features of let + it is in read-only
